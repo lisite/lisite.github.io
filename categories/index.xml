@@ -62,6 +62,24 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
     </item>
     
     <item>
+      <title>{react, redux} 🆚 {vue, vueX}</title>
+      <link>https://lisite.github.io/blogs/tempus/</link>
+      <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/tempus/</guid>
+      <description>待补充～</description>
+    </item>
+    
+    <item>
+      <title>{react, redux} 🆚 {vue, vueX}</title>
+      <link>https://lisite.github.io/blogs/tempus/</link>
+      <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/tempus/</guid>
+      <description>待补充～</description>
+    </item>
+    
+    <item>
       <title>微信的历史</title>
       <link>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</link>
       <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
@@ -122,24 +140,6 @@ The end</description>
     </item>
     
     <item>
-      <title>一</title>
-      <link>https://lisite.github.io/blogs/tempus/</link>
-      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
-      
-      <guid>https://lisite.github.io/blogs/tempus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>一</title>
-      <link>https://lisite.github.io/blogs/tempus/</link>
-      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
-      
-      <guid>https://lisite.github.io/blogs/tempus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>原型对象</title>
       <link>https://lisite.github.io/blogs/magna/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
@@ -163,20 +163,20 @@ The end</description>
     
     <item>
       <title>雨一直下</title>
-      <link>https://lisite.github.io/blogs/ipsum/</link>
-      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      <link>https://lisite.github.io/blogs/%E5%B9%BF%E5%B7%9E%E7%9A%84%E9%9B%A8%E5%AD%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/blogs/ipsum/</guid>
-      <description>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</description>
+      <guid>https://lisite.github.io/blogs/%E5%B9%BF%E5%B7%9E%E7%9A%84%E9%9B%A8%E5%AD%A3/</guid>
+      <description>盛夏也是广州的雨季</description>
     </item>
     
     <item>
       <title>雨一直下</title>
-      <link>https://lisite.github.io/blogs/ipsum/</link>
-      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      <link>https://lisite.github.io/blogs/%E5%B9%BF%E5%B7%9E%E7%9A%84%E9%9B%A8%E5%AD%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/blogs/ipsum/</guid>
-      <description>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</description>
+      <guid>https://lisite.github.io/blogs/%E5%B9%BF%E5%B7%9E%E7%9A%84%E9%9B%A8%E5%AD%A3/</guid>
+      <description>盛夏也是广州的雨季</description>
     </item>
     
   </channel>
