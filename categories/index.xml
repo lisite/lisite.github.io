@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forty</title>
+    <link>https://lisite.github.io/categories/</link>
+    <description>Recent content on Forty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jul 2018 21:28:43 -0500</lastBuildDate>
+    
+	<atom:link href="https://lisite.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>es5 和 es6 的this指向</title>
+      <link>https://lisite.github.io/blogs/this/</link>
+      <pubDate>Tue, 31 Jul 2018 21:28:43 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/this/</guid>
+      <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
+es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
+ var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1  2、函数作为对象的方法调用时，this指向这个上级对象。
+ var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } }  3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
+ egA: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === window }, 1000) } } father.son() egB: var father = { age: 50, son: function(){ setTimeout(function(){ console.</description>
+    </item>
+    
+    <item>
+      <title>es5 和 es6 的this指向</title>
+      <link>https://lisite.github.io/blogs/this/</link>
+      <pubDate>Tue, 31 Jul 2018 21:28:43 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/this/</guid>
+      <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
+es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
+ var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1  2、函数作为对象的方法调用时，this指向这个上级对象。
+ var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } }  3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
+ egA: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === window }, 1000) } } father.son() egB: var father = { age: 50, son: function(){ setTimeout(function(){ console.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 API</title>
+      <link>https://lisite.github.io/blogs/html5/</link>
+      <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/html5/</guid>
+      <description>1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
+ &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
+2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
+3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持，Andriod未实现</description>
+    </item>
+    
+    <item>
+      <title>HTML5 API</title>
+      <link>https://lisite.github.io/blogs/html5/</link>
+      <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/html5/</guid>
+      <description>1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
+ &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
+2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
+3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持，Andriod未实现</description>
+    </item>
+    
+    <item>
+      <title>微信的历史</title>
+      <link>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</link>
+      <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</guid>
+      <description>2010年6月，苹果发布 iPhone 4。当年中国的智能手机销量是3610万部，2011年就猛增到9060万部，2012年更是飙升到2.142亿部。很显然，手机软件（尤其是即时通信软件）即将爆发。
+2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;rdquo;微信&amp;rdquo;。
+2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;rdquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;rdquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
+2011年5月，微信推出了&amp;rdquo;语音消息&amp;rdquo;这个关键功能，让用户的手机变成对讲机那样工作，每条语音消息不能超过60秒。马化腾后来说：&amp;rdquo;语音消息将不习惯在智能手机上打字的商人转变为微信用户。&amp;rdquo;微信的每日用户增长从 10000 增加到了 60000。
+2011年7月，微信增加了基于位置的服务&amp;rdquo;附近的人&amp;rdquo;、&amp;rdquo;漂流瓶&amp;rdquo;和&amp;rdquo;摇一摇&amp;rdquo;，允许用户与附近的陌生人联系。每日用户增长跳升到了100,000。
+2012年3月，微信达到1亿注册用户，这时距离产品推出433天。
+2012年4月，微信开始国际化，英文名称定为&amp;rdquo;WeChat&amp;rdquo;，并推出了多语言版本。
+2012年5月，微信推出&amp;rdquo;朋友圈&amp;rdquo;，允许用户分享自己的生活。这使得微信从一个即时通信软件，向社交网络发展。
+2012年8月，微信增加&amp;rdquo;视频通话&amp;rdquo;功能，并且提供了网页版。
+2012年9月17日，微信达到2亿注册用户。
+2013年1月15日，达到3亿注册用户，成为全球用户最多的通信软件。
+2013年8月，微信添加了公众号、微信支付、表情商店和游戏中心等大量功能。公众号使得微信变成内容平台，游戏中心使得微信具备娱乐功能，游戏中心的第一个游戏是&amp;rdquo;飞机大战&amp;rdquo;。微信支付最早只限于游戏内的支付，后来才演变成通用的支付工具。
+2013年8月，中国以外的注册用户达到1亿。
+2014年1月，腾讯联合创始人张志东希望改变传统的向腾讯员工发红包的形式，就委托微信团队的一个工程师开发了微信的红包功能。这个功能在春节前夕向公众开放，结果一炮而红，那年春节超过800万中国人收到超过4000万个红包。为了发红包，用户开始将他们的银行账户，绑定到微信手机钱包，这使得微信有能力与支付宝竞争。阿里巴巴创始人马云称这件事是&amp;rdquo;袭击珍珠港&amp;rdquo;。
+2014年10月，朋友圈允许发布短视频。
+2015年5月，增加微信运动功能，可以记录用户每天走了多少步，并给出排名。
+2016年1月，张小龙宣布正在研发小程序，这个功能允许商家和第三方开发者在微信里面运行自己的应用程序，完成一些特殊功能，比如点餐和购物，用户不用额外安装。对于微信来说，小程序可以提供用户粘性，并且增加线下服务的能力。
+2017年1月，小程序的开发指南和 API 正式发布。
+2017年12月，微信正式推出小游戏，它属于小程序的一个类别。同时发布了一个小游戏&amp;rdquo;跳一跳&amp;rdquo;作为演示，这个游戏的日活跃用户达到1亿。
+2018年2月，除夕夜共有6.88亿用户使用了微信红包。当月，微信的全球活跃用户达到了10亿。
+2018年6月，微信小程序数量超过100万，用户超过6亿。小程序将最终使得微信成为一个生态体系，其中可以进行各种各样的业务，为腾讯创造出无数的商业可能。
+The end</description>
+    </item>
+    
+    <item>
+      <title>微信的历史</title>
+      <link>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</link>
+      <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</guid>
+      <description>2010年6月，苹果发布 iPhone 4。当年中国的智能手机销量是3610万部，2011年就猛增到9060万部，2012年更是飙升到2.142亿部。很显然，手机软件（尤其是即时通信软件）即将爆发。
+2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;rdquo;微信&amp;rdquo;。
+2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;rdquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;rdquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
+2011年5月，微信推出了&amp;rdquo;语音消息&amp;rdquo;这个关键功能，让用户的手机变成对讲机那样工作，每条语音消息不能超过60秒。马化腾后来说：&amp;rdquo;语音消息将不习惯在智能手机上打字的商人转变为微信用户。&amp;rdquo;微信的每日用户增长从 10000 增加到了 60000。
+2011年7月，微信增加了基于位置的服务&amp;rdquo;附近的人&amp;rdquo;、&amp;rdquo;漂流瓶&amp;rdquo;和&amp;rdquo;摇一摇&amp;rdquo;，允许用户与附近的陌生人联系。每日用户增长跳升到了100,000。
+2012年3月，微信达到1亿注册用户，这时距离产品推出433天。
+2012年4月，微信开始国际化，英文名称定为&amp;rdquo;WeChat&amp;rdquo;，并推出了多语言版本。
+2012年5月，微信推出&amp;rdquo;朋友圈&amp;rdquo;，允许用户分享自己的生活。这使得微信从一个即时通信软件，向社交网络发展。
+2012年8月，微信增加&amp;rdquo;视频通话&amp;rdquo;功能，并且提供了网页版。
+2012年9月17日，微信达到2亿注册用户。
+2013年1月15日，达到3亿注册用户，成为全球用户最多的通信软件。
+2013年8月，微信添加了公众号、微信支付、表情商店和游戏中心等大量功能。公众号使得微信变成内容平台，游戏中心使得微信具备娱乐功能，游戏中心的第一个游戏是&amp;rdquo;飞机大战&amp;rdquo;。微信支付最早只限于游戏内的支付，后来才演变成通用的支付工具。
+2013年8月，中国以外的注册用户达到1亿。
+2014年1月，腾讯联合创始人张志东希望改变传统的向腾讯员工发红包的形式，就委托微信团队的一个工程师开发了微信的红包功能。这个功能在春节前夕向公众开放，结果一炮而红，那年春节超过800万中国人收到超过4000万个红包。为了发红包，用户开始将他们的银行账户，绑定到微信手机钱包，这使得微信有能力与支付宝竞争。阿里巴巴创始人马云称这件事是&amp;rdquo;袭击珍珠港&amp;rdquo;。
+2014年10月，朋友圈允许发布短视频。
+2015年5月，增加微信运动功能，可以记录用户每天走了多少步，并给出排名。
+2016年1月，张小龙宣布正在研发小程序，这个功能允许商家和第三方开发者在微信里面运行自己的应用程序，完成一些特殊功能，比如点餐和购物，用户不用额外安装。对于微信来说，小程序可以提供用户粘性，并且增加线下服务的能力。
+2017年1月，小程序的开发指南和 API 正式发布。
+2017年12月，微信正式推出小游戏，它属于小程序的一个类别。同时发布了一个小游戏&amp;rdquo;跳一跳&amp;rdquo;作为演示，这个游戏的日活跃用户达到1亿。
+2018年2月，除夕夜共有6.88亿用户使用了微信红包。当月，微信的全球活跃用户达到了10亿。
+2018年6月，微信小程序数量超过100万，用户超过6亿。小程序将最终使得微信成为一个生态体系，其中可以进行各种各样的业务，为腾讯创造出无数的商业可能。
+The end</description>
+    </item>
+    
+    <item>
+      <title>一</title>
+      <link>https://lisite.github.io/blogs/tempus/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/tempus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>一</title>
+      <link>https://lisite.github.io/blogs/tempus/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/tempus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>原型对象</title>
+      <link>https://lisite.github.io/blogs/magna/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/magna/</guid>
+      <description>1、万物皆对象
+2、所有对象的隐式原型指向他的构造函数的显示原型
+3、基于第二点的关系，会形成一个链状结构</description>
+    </item>
+    
+    <item>
+      <title>原型对象</title>
+      <link>https://lisite.github.io/blogs/magna/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/magna/</guid>
+      <description>1、万物皆对象
+2、所有对象的隐式原型指向他的构造函数的显示原型
+3、基于第二点的关系，会形成一个链状结构</description>
+    </item>
+    
+    <item>
+      <title>雨一直下</title>
+      <link>https://lisite.github.io/blogs/ipsum/</link>
+      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/ipsum/</guid>
+      <description>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</description>
+    </item>
+    
+    <item>
+      <title>雨一直下</title>
+      <link>https://lisite.github.io/blogs/ipsum/</link>
+      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/ipsum/</guid>
+      <description>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</description>
+    </item>
+    
+  </channel>
+</rss>
