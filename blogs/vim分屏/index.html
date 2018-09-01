@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -70,45 +70,65 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner">
-			
-                        <header class="major">
-                            <h1>Categories</h1>
-                        </header>
-                        <div class="content">
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>Vim分屏</h1>
+                            </header>
                             
-                        </div>
-                    </div>
-                </section>
+                                <span class="image main"><img src="/img/blogs/vim.jpeg" alt="" /></span>
+                            
+                            
 
-                <section id="two" class="spotlights">
-                    
-                    <section>
-                        <a href="/categories/" class="image">
-							<img src="/img/categories/" alt="" data-position="center center" />
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3></h3>
-                                </header>
-                                <p></p>
-                                <ul class="actions">
-                                    <li><a href="/categories/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
+<p>使用vim分屏可以提高操作效率，也可以用来装*</p>
+
+<hr />
+
+<h3 id="一-分屏操作">一、分屏操作</h3>
+
+<h4 id="1-横-纵向分屏-o-o表示横-纵向分屏-n代表分屏时要打开的文件">1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件)</h4>
+
+<pre><code>$ vim -on react.js vue.js...  // 横向
+$ vim -On react.js vue.js...  // 纵向
+</code></pre>
+
+<h4 id="2-新建文件并分屏-ctrl-w-n-new">2、新建文件并分屏，Ctrl+W n (new)</h4>
+
+<h3 id="二-关闭分屏">二、关闭分屏</h3>
+
+<h4 id="1-快捷键可使用ctrl-w-c-命令行如下">1、快捷键可使用ctrl+W c，命令行如下：</h4>
+
+<pre><code>$ :only   //   取消光标所在的屏
+</code></pre>
+
+<h4 id="2-快捷键其他窗口ctrl-w-o-other">2、快捷键其他窗口ctrl+w o (other)</h4>
+
+<h3 id="三-在分屏中切换光标ctrl-w-h-j-k-l-左-下-上-右">三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右</h3>
+
+<h3 id="四-载入文件">四、载入文件</h3>
+
+<h4 id="1-在新的垂直分屏中打开文件">1、在新的垂直分屏中打开文件</h4>
+
+<pre><code>$ :vs
+</code></pre>
+
+<h4 id="2-在新的水平分屏中打开文件">2、在新的水平分屏中打开文件</h4>
+
+<pre><code>$ :sv
+</code></pre>
+
                         </div>
                     </section>
-                    
-                </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -134,7 +154,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -154,6 +173,6 @@
     
 
     
-        
+
     </body>
 </html>

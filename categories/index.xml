@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Forty</title>
+    <title>Forty</title>
     <link>https://lisite.github.io/categories/</link>
-    <description>Recent content in Categories on Forty</description>
+    <description>Recent content on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Jul 2018 21:28:43 -0500</lastBuildDate>
@@ -12,16 +12,12 @@
     
     
     <item>
-      <title></title>
-      <link>https://lisite.github.io/categories/</link>
+      <title>es5 和 es6 的this指向</title>
+      <link>https://lisite.github.io/blogs/this/</link>
       <pubDate>Tue, 31 Jul 2018 21:28:43 -0500</pubDate>
       
-      <guid>https://lisite.github.io/categories/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>�问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
+      <guid>https://lisite.github.io/blogs/this/</guid>
+      <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
 es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
  var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1  2、函数作为对象的方法调用时，this指向这个上级对象。
  var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } }  3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
