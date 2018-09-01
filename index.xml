@@ -30,7 +30,7 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
       <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
       
       <guid>https://lisite.github.io/blogs/html5/</guid>
-      <description>@keyframes run { 0% { left: 0px; top: 0px; } 25% { top: 80px; } 50% { left: 50%; top: 0px; } 75% { top: -80px; } 100% { left: 100%; top: 0px; } } .floating{ width: 300px; animation: run 6s ease-in-out infinite alternate }  html5
+      <description>html5
 1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
  &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
 2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
