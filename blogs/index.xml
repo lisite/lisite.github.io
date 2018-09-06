@@ -6,7 +6,7 @@
     <description>Recent content in 活着 on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Oct 2017 22:27:21 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 02 Apr 2018 22:27:21 -0500</lastBuildDate>
     
 	<atom:link href="https://lisite.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
@@ -48,6 +48,19 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
     </item>
     
     <item>
+      <title>原型对象</title>
+      <link>https://lisite.github.io/blogs/magna/</link>
+      <pubDate>Wed, 11 Apr 2018 22:26:09 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/magna/</guid>
+      <description> 1、万物皆对象
+2、所有对象的隐式原型指向他的构造函数（父类）的显示原型
+3、基于第二点的关系，会形成一个链状结构
+指向示例： obj = {say: function(){console.log(&#39;hello world&#39;)}} obj.__prototype__ = Object.prototype;  概括的描述：  对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。
+ </description>
+    </item>
+    
+    <item>
       <title>{react, redux} 🆚 {vue, vueX}</title>
       <link>https://lisite.github.io/blogs/tempus/</link>
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
@@ -84,17 +97,6 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
 2018年2月，除夕夜共有6.88亿用户使用了微信红包。当月，微信的全球活跃用户达到了10亿。
 2018年6月，微信小程序数量超过100万，用户超过6亿。小程序将最终使得微信成为一个生态体系，其中可以进行各种各样的业务，为腾讯创造出无数的商业可能。
 The end</description>
-    </item>
-    
-    <item>
-      <title>原型对象</title>
-      <link>https://lisite.github.io/blogs/magna/</link>
-      <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
-      
-      <guid>https://lisite.github.io/blogs/magna/</guid>
-      <description>1、万物皆对象
-2、所有对象的隐式原型指向他的构造函数的显示原型
-3、基于第二点的关系，会形成一个链状结构</description>
     </item>
     
     <item>

@@ -81,11 +81,25 @@
                             
                                 <span class="image main"><img src="/img/blogs/pic09.jpg" alt="" /></span>
                             
-                            <p>1、万物皆对象</p>
+                            
 
-<p>2、所有对象的隐式原型指向他的构造函数的显示原型</p>
+<p>1、万物皆对象</p>
+
+<p>2、所有对象的隐式原型指向他的构造函数（父类）的显示原型</p>
 
 <p>3、基于第二点的关系，会形成一个链状结构</p>
+
+<h4 id="指向示例">指向示例：</h4>
+
+<pre><code>obj = {say: function(){console.log('hello world')}}
+obj.__prototype__ = Object.prototype;
+</code></pre>
+
+<h4 id="概括的描述">概括的描述：</h4>
+
+<blockquote>
+<p>对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。</p>
+</blockquote>
 
                         </div>
                     </section>
