@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>继承</title>
+      <link>https://lisite.github.io/blogs/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Thu, 16 Aug 2018 08:31:58 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/blogs/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
+      <description>对象A继承对象B的属性和方法，也可能继承对象B的原型对象的属性和方法，或者两者兼而有之，可以使用instanceof来判断某个对象是否继承了某个类
+ 1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化  2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则  3.</description>
+    </item>
+    
+    <item>
       <title>es5 和 es6 的this指向</title>
       <link>https://lisite.github.io/blogs/this/</link>
       <pubDate>Tue, 31 Jul 2018 21:28:43 -0500</pubDate>
@@ -66,7 +76,15 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
       
       <guid>https://lisite.github.io/blogs/tempus/</guid>
-      <description>待补充～</description>
+      <description> 关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
+ 优点：
+1、它让你在编写代码的时候同时也在思考你的应用。
+只言片语： 组件的本质是一个函数，而组件的属性会被以一个对象的形式（props）传递给该函数。
+在Reactjs中，组件的名称必须是大写开头，而通常首字母大写的函数声明意味着这是一个类或者构造函数；
+ps: 类声明和函数声明的区别在于，类的声明不会被提升（但是类的表达式还是存在提升的问题）
+Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =&amp;gt; 挂载 =&amp;gt; 渲染中 =&amp;gt; 渲染结束 =&amp;gt; 组件销毁（卸载）
+生命周期钩子：
+关于Vue： vuejs实例生命周期如图： vuex </description>
     </item>
     
     <item>
@@ -100,12 +118,12 @@ The end</description>
     </item>
     
     <item>
-      <title>雨一直下</title>
-      <link>https://lisite.github.io/blogs/%E5%B9%BF%E5%B7%9E%E7%9A%84%E9%9B%A8%E5%AD%A3/</link>
+      <title>just do it</title>
+      <link>https://lisite.github.io/blogs/just-do-it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/blogs/%E5%B9%BF%E5%B7%9E%E7%9A%84%E9%9B%A8%E5%AD%A3/</guid>
-      <description>盛夏也是广州的雨季</description>
+      <guid>https://lisite.github.io/blogs/just-do-it/</guid>
+      <description>Time goes on. So whatever you’re going to do, do it. Do it now. Don’t wait.</description>
     </item>
     
   </channel>
