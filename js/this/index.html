@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -76,33 +76,101 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <span class="image">
-                            <img src="/img/pic02.jpg" alt="" />
-                        </span>
-			
-                        <header class="major">
-                            <h1>活着</h1>
-                        </header>
-                        <div class="content">
-                            <p>记录技术和我的生活</p>
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>es5 和 es6 的this指向</h1>
+                            </header>
+                            
+                                <span class="image main"><img src="/img/pic10.jpg" alt="" /></span>
+                            
+                            
+
+<p>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&hellip;</p>
+
+<h2 id="es5中的this">es5中的this</h2>
+
+<p>1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。</p>
+
+<pre><code>    var x = 1;
+    function father() {
+        console.log(window.x);
+        (function son() {console.log(this.x)})();
+    }
+    father();  //  结果为 1
+</code></pre>
+
+<p>2、函数作为对象的方法调用时，this指向这个上级对象。</p>
+
+<pre><code>    var father = {
+        age: 50,
+        son: function(){
+            console.log(this); // 结果为father这个对象
+        }
+    }
+</code></pre>
+
+<p>3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。</p>
+
+<pre><code>    egA:
+    var father = {
+        age: 50,
+        son: function(){
+            setTimeout(function(){
+                console.log(this) // this === window
+            }, 1000)
+        }
+    }
+    father.son()
+
+    egB:
+    var father = {
+        age: 50,
+        son: function(){
+            setTimeout(function(){
+                console.log(this) // this === father
+            }.bind(this), 1000)
+        }
+    }
+    father.son()
+</code></pre>
+
+<p>4、定时器setTimeout(function(){}, 1000)中的函数，是匿名函数，所以如果不手动绑定this，则指向window。</p>
+
+<p>5、如果是使用new关键字来调用函数，那么函数内部的this就是一个全新的对象。</p>
+
+<h2 id="箭头函数-中的this">箭头函数(=&gt;)中的this</h2>
+
+<p>es6中箭头函数的this，只取决于函数创建时的作用域，且无法更改。因为箭头函数里面根本就没有自身的this，而是引用外层的this。</p>
+
+<pre><code>    eg:
+    var id=10;
+    var father = {
+        age: 1, 
+        son: function(){
+            setTimeout(()=&gt;{
+                console.log(id +&quot;,&quot;+ this.id);
+        }, 1000)
+    }};
+    father.son.call({id: 666});  // 结果666，因为this只指向函数定义生效时所在的对象
+    // call和apply这两个函数（非继承）都是在特定的作用域中调用函数,能改变函数的作用域
+
+</code></pre>
+
+<p><code>ps: 箭头函数可以让this指向固定化，这种特性很有利于封装回调函数。</code></p>
 
                         </div>
-                    </div>
-                </section>
-
-                <section id="two" class="spotlights">
-                    
-                </section>
+                    </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -128,7 +196,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -150,6 +217,6 @@
     
 
     
-        
+
     </body>
 </html>

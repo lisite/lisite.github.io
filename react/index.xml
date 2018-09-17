@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Forty</title>
+    <link>https://lisite.github.io/react/</link>
+    <description>Recent content in React on Forty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Sep 2018 21:50:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://lisite.github.io/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>{react, redux} 🆚 {vue, vueX}</title>
+      <link>https://lisite.github.io/react/tempus/</link>
+      <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/react/tempus/</guid>
+      <description> 关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
+ 优点：
+1、它让你在编写代码的时候同时也在思考你的应用。
+只言片语： 组件的本质是一个函数，而组件的属性会被以一个对象的形式（props）传递给该函数。
+在Reactjs中，组件的名称必须是大写开头，而通常首字母大写的函数声明意味着这是一个类或者构造函数；
+ps: 类声明和函数声明的区别在于，类的声明不会被提升（但是类的表达式还是存在提升的问题）
+Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =&amp;gt; 挂载 =&amp;gt; 渲染中 =&amp;gt; 渲染结束 =&amp;gt; 组件销毁（卸载）
+生命周期钩子：
+关于Vue： vuejs实例生命周期如图： vuex </description>
+    </item>
+    
+  </channel>
+</rss>

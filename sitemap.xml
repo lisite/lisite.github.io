@@ -3,27 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lisite.github.io/blogs/vim%E5%88%86%E5%B1%8F/</loc>
+    <loc>https://lisite.github.io/pages/</loc>
+    <lastmod>2018-09-17T21:51:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/react/</loc>
+    <lastmod>2018-09-17T21:50:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/vue/</loc>
+    <lastmod>2018-09-17T21:50:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/config/</loc>
+    <lastmod>2018-09-17T21:49:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/js/</loc>
+    <lastmod>2018-09-17T21:47:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/stories/</loc>
+    <lastmod>2018-09-17T21:39:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</loc>
     <lastmod>2018-09-01T10:29:01+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</loc>
+    <loc>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</loc>
     <lastmod>2018-08-16T08:31:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/this/</loc>
+    <loc>https://lisite.github.io/js/this/</loc>
     <lastmod>2018-07-31T21:28:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/html5/</loc>
+    <loc>https://lisite.github.io/pages/pages/</loc>
     <lastmod>2018-04-16T22:42:51-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/magna/</loc>
+    <loc>https://lisite.github.io/js/magna/</loc>
     <lastmod>2018-04-11T22:26:09-05:00</lastmod>
   </url>
   
@@ -33,12 +63,12 @@
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/tempus/</loc>
+    <loc>https://lisite.github.io/react/tempus/</loc>
     <lastmod>2018-03-31T22:26:13-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</loc>
+    <loc>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</loc>
     <lastmod>2017-10-31T22:42:51-05:00</lastmod>
   </url>
   
@@ -66,7 +96,7 @@
   </url>
   
   <url>
-    <loc>https://lisite.github.io/blogs/just-do-it/</loc>
+    <loc>https://lisite.github.io/stories/just-do-it/</loc>
   </url>
   
 </urlset>

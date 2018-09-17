@@ -2964,6 +2964,7 @@
 			-ms-flex-direction: row;
 			flex-direction: row;
 			background-color: #2e3450;
+			transform-style: preserve-3d;			
 		}
 
 			.spotlights > section > .image {
@@ -3018,6 +3019,7 @@
 					margin: 0 auto;
 					max-width: 100%;
 					width: 65em;
+					transform: translateZ(20px);
 				}
 
 			.spotlights > section:nth-child(2n) {

@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -76,33 +76,46 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <span class="image">
-                            <img src="/img/pic02.jpg" alt="" />
-                        </span>
-			
-                        <header class="major">
-                            <h1>活着</h1>
-                        </header>
-                        <div class="content">
-                            <p>记录技术和我的生活</p>
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>原型对象</h1>
+                            </header>
+                            
+                                <span class="image main"><img src="/img/pic09.jpg" alt="" /></span>
+                            
+                            
+
+<p>1、万物皆对象</p>
+
+<p>2、所有对象的隐式原型指向他的构造函数（父类）的显示原型</p>
+
+<p>3、基于第二点的关系，会形成一个链状结构</p>
+
+<h4 id="指向示例">指向示例：</h4>
+
+<pre><code>obj = {say: function(){console.log('hello world')}}
+obj.__prototype__ = Object.prototype;
+</code></pre>
+
+<h4 id="概括的描述">概括的描述：</h4>
+
+<blockquote>
+<p>对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。</p>
+</blockquote>
 
                         </div>
-                    </div>
-                </section>
-
-                <section id="two" class="spotlights">
-                    
-                </section>
+                    </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -128,7 +141,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -150,6 +162,6 @@
     
 
     
-        
+
     </body>
 </html>

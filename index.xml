@@ -13,30 +13,30 @@
     
     <item>
       <title>Vim分屏</title>
-      <link>https://lisite.github.io/blogs/vim%E5%88%86%E5%B1%8F/</link>
+      <link>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</link>
       <pubDate>Sat, 01 Sep 2018 10:29:01 +0800</pubDate>
       
-      <guid>https://lisite.github.io/blogs/vim%E5%88%86%E5%B1%8F/</guid>
+      <guid>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</guid>
       <description> 使用vim分屏可以提高操作效率，也可以用来装*
 一、分屏操作 1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件) $ vim -on react.js vue.js... // 横向 $ vim -On react.js vue.js... // 纵向  2、新建文件并分屏，Ctrl+W n (new) 二、关闭分屏 1、快捷键可使用ctrl+W c，命令行如下： $ :only // 取消光标所在的屏  2、快捷键其他窗口ctrl+w o (other) 三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右 四、载入文件 1、在新的垂直分屏中打开文件 $ :vs  2、在新的水平分屏中打开文件 $ :sv  </description>
     </item>
     
     <item>
       <title>继承</title>
-      <link>https://lisite.github.io/blogs/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</link>
+      <link>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</link>
       <pubDate>Thu, 16 Aug 2018 08:31:58 +0800</pubDate>
       
-      <guid>https://lisite.github.io/blogs/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
+      <guid>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
       <description>对象A继承对象B的属性和方法，也可能继承对象B的原型对象的属性和方法，或者两者兼而有之，可以使用instanceof来判断某个对象是否继承了某个类
  1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化  2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则  3.</description>
     </item>
     
     <item>
       <title>es5 和 es6 的this指向</title>
-      <link>https://lisite.github.io/blogs/this/</link>
+      <link>https://lisite.github.io/js/this/</link>
       <pubDate>Tue, 31 Jul 2018 21:28:43 -0500</pubDate>
       
-      <guid>https://lisite.github.io/blogs/this/</guid>
+      <guid>https://lisite.github.io/js/this/</guid>
       <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
 es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
  var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1  2、函数作为对象的方法调用时，this指向这个上级对象。
@@ -46,23 +46,24 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
     
     <item>
       <title>HTML5 API</title>
-      <link>https://lisite.github.io/blogs/html5/</link>
+      <link>https://lisite.github.io/pages/pages/</link>
       <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
       
-      <guid>https://lisite.github.io/blogs/html5/</guid>
-      <description>html5
+      <guid>https://lisite.github.io/pages/pages/</guid>
+      <description> html5
 1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
  &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
 2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
-3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持</description>
+3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持
+Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurrentPosition, clearWatch, watchPosition}  </description>
     </item>
     
     <item>
       <title>原型对象</title>
-      <link>https://lisite.github.io/blogs/magna/</link>
+      <link>https://lisite.github.io/js/magna/</link>
       <pubDate>Wed, 11 Apr 2018 22:26:09 -0500</pubDate>
       
-      <guid>https://lisite.github.io/blogs/magna/</guid>
+      <guid>https://lisite.github.io/js/magna/</guid>
       <description> 1、万物皆对象
 2、所有对象的隐式原型指向他的构造函数（父类）的显示原型
 3、基于第二点的关系，会形成一个链状结构
@@ -72,10 +73,10 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
     
     <item>
       <title>{react, redux} 🆚 {vue, vueX}</title>
-      <link>https://lisite.github.io/blogs/tempus/</link>
+      <link>https://lisite.github.io/react/tempus/</link>
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
       
-      <guid>https://lisite.github.io/blogs/tempus/</guid>
+      <guid>https://lisite.github.io/react/tempus/</guid>
       <description> 关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
  优点：
 1、它让你在编写代码的时候同时也在思考你的应用。
@@ -89,10 +90,10 @@ Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =
     
     <item>
       <title>微信的历史</title>
-      <link>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</link>
+      <link>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</link>
       <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
       
-      <guid>https://lisite.github.io/blogs/%E5%BE%AE%E4%BF%A1/</guid>
+      <guid>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</guid>
       <description>2010年6月，苹果发布 iPhone 4。当年中国的智能手机销量是3610万部，2011年就猛增到9060万部，2012年更是飙升到2.142亿部。很显然，手机软件（尤其是即时通信软件）即将爆发。
 2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;rdquo;微信&amp;rdquo;。
 2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;rdquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;rdquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
@@ -119,10 +120,10 @@ The end</description>
     
     <item>
       <title>just do it</title>
-      <link>https://lisite.github.io/blogs/just-do-it/</link>
+      <link>https://lisite.github.io/stories/just-do-it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/blogs/just-do-it/</guid>
+      <guid>https://lisite.github.io/stories/just-do-it/</guid>
       <description>Time goes on. So whatever you’re going to do, do it. Do it now. Don’t wait.</description>
     </item>
     

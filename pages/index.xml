@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Forty</title>
+    <link>https://lisite.github.io/pages/</link>
+    <description>Recent content in Pages on Forty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Sep 2018 21:51:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://lisite.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML5 API</title>
+      <link>https://lisite.github.io/pages/pages/</link>
+      <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
+      
+      <guid>https://lisite.github.io/pages/pages/</guid>
+      <description> html5
+1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
+ &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
+2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
+3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持
+Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurrentPosition, clearWatch, watchPosition}  </description>
+    </item>
+    
+  </channel>
+</rss>
