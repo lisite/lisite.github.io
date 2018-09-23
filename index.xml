@@ -6,10 +6,43 @@
     <description>Recent content on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Sep 2018 10:29:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Sep 2018 15:30:26 +0800</lastBuildDate>
     
 	<atom:link href="https://lisite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue在生产环境打包出现一片空白的问题</title>
+      <link>https://lisite.github.io/vue/vue/</link>
+      <pubDate>Sun, 23 Sep 2018 15:30:26 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/vue/vue/</guid>
+      <description> vue在生产环境打包时会出现页面空白的问题 1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径
+ assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39;  2、确认不是资源路径的问题以后再看history的配置问题
+正式环境打包时，在路由中使用了mode = history的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可
+如果需要设置网址无#，则需要改以下两个地方：
+export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、子路径需要加上去 routes: [ path:&#39;/acount&#39;, name:&#39;account&#39;, // 2、name需要加上去 component: account ] })  </description>
+    </item>
+    
+    <item>
+      <title>前端nginx配置</title>
+      <link>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 19 Sep 2018 22:16:52 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</guid>
+      <description> 参考文章：
+http://blog.51cto.com/leeyan/1865448
+https://juejin.im/entry/5abaf4986fb9a028c42e3c46
+nginx常用两大功能： 1、负载均衡：决生产环境的客户端请求很多的时候,动态的去分散给各个服务器,缓解服务器压力,充分利用资源
+2、反向代理：反向代理将字符串和相应的服务器和端口匹配上,从而获取用户想要获取的内容
+nginx location 匹配规则: ~ 波浪线表示执行一个正则匹配，区分大小写
+~* 表示执行一个正则匹配，不区分大小写
+^~ 表示普通字符匹配，如果该选项匹配，只匹配该选项，不匹配别的选项，一般用来匹配目录
+= 进行普通字符精确匹配
+@ 定义一个命名的 location，使用在内部定向时，例如 error_page, try_files
+spa应用服务器部署：
+ location / { root /www/home/build/; index index.html index.html index.php; try_files $uri $uri/ /index.html; } location ^~ /api/ { proxy_pass http://api.site; }  </description>
+    </item>
     
     <item>
       <title>Vim分屏</title>

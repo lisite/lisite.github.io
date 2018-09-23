@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -76,45 +76,54 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <header class="major">
-                            <h1>Categories</h1>
-                        </header>
-                        <div class="content">
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>Vue在生产环境打包出现一片空白的问题</h1>
+                            </header>
                             
-                        </div>
-                    </div>
-                </section>
+                                <span class="image main"><img src="/img/vue.png" alt="" /></span>
+                            
+                            
 
-                <section id="two" class="spotlights">
-                    
-                    <section data-tilt>
-                        <a href="/categories/" class="image">
-							<img src="/img/" alt="" data-position="center center" />
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3></h3>
-                                </header>
-                                <p></p>
-                                <ul class="actions">
-                                    <li><a href="/categories/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
+<h3 id="vue在生产环境打包时会出现页面空白的问题">vue在生产环境打包时会出现页面空白的问题</h3>
+
+<p>1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径</p>
+
+<pre><code>
+assetsPublicPath: '/' =&gt; assetsPublicPath: './' 
+
+</code></pre>
+
+<p>2、确认不是资源路径的问题以后再看history的配置问题</p>
+
+<p>正式环境打包时，在路由中使用了<code>mode = history</code>的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可</p>
+
+<p>如果需要设置网址无#，则需要改以下两个地方：</p>
+
+<pre><code class="language-javascript">export default new Router({
+  mode: 'history',
+  base: '/', //  1、子路径需要加上去
+  routes: [
+    path:'/acount',
+    name:'account',  //  2、name需要加上去
+    component: account
+  ]
+})
+</code></pre>
+
                         </div>
                     </section>
-                    
-                </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -140,7 +149,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -162,6 +170,6 @@
     
 
     
-        
+
     </body>
 </html>

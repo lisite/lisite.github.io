@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -76,45 +76,62 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <header class="major">
-                            <h1>Categories</h1>
-                        </header>
-                        <div class="content">
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>前端nginx配置</h1>
+                            </header>
                             
-                        </div>
-                    </div>
-                </section>
+                            
 
-                <section id="two" class="spotlights">
-                    
-                    <section data-tilt>
-                        <a href="/categories/" class="image">
-							<img src="/img/" alt="" data-position="center center" />
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3></h3>
-                                </header>
-                                <p></p>
-                                <ul class="actions">
-                                    <li><a href="/categories/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
+<p>参考文章：</p>
+
+<p><a href="http://blog.51cto.com/leeyan/1865448">http://blog.51cto.com/leeyan/1865448</a></p>
+
+<p><a href="https://juejin.im/entry/5abaf4986fb9a028c42e3c46">https://juejin.im/entry/5abaf4986fb9a028c42e3c46</a></p>
+
+<h4 id="nginx常用两大功能">nginx常用两大功能：</h4>
+
+<p>1、负载均衡：决生产环境的客户端请求很多的时候,动态的去分散给各个服务器,缓解服务器压力,充分利用资源<br>
+2、反向代理：反向代理将字符串和相应的服务器和端口匹配上,从而获取用户想要获取的内容</p>
+
+<h3 id="nginx-location-匹配规则">nginx location 匹配规则:</h3>
+
+<p>~ 波浪线表示执行一个正则匹配，区分大小写</p>
+
+<p>~* 表示执行一个正则匹配，不区分大小写</p>
+
+<p>^~ 表示普通字符匹配，如果该选项匹配，只匹配该选项，不匹配别的选项，一般用来匹配目录</p>
+
+<p>= 进行普通字符精确匹配</p>
+
+<p>@ 定义一个命名的 location，使用在内部定向时，例如 error_page, try_files</p>
+
+<p>spa应用服务器部署：</p>
+
+<pre><code> location / {
+   root /www/home/build/;
+   index index.html index.html index.php;
+   try_files $uri $uri/ /index.html;
+ }
+
+  location ^~ /api/ {
+    proxy_pass http://api.site;
+  }
+</code></pre>
+
                         </div>
                     </section>
-                    
-                </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -140,7 +157,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -162,6 +178,6 @@
     
 
     
-        
+
     </body>
 </html>

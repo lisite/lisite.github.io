@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lisite.github.io/vue/vue/</loc>
+    <lastmod>2018-09-23T15:30:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2018-09-19T22:16:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lisite.github.io/pages/</loc>
     <lastmod>2018-09-17T21:51:00+08:00</lastmod>
   </url>
@@ -86,7 +96,7 @@
   
   <url>
     <loc>https://lisite.github.io/</loc>
-    <lastmod>2018-09-01T10:29:01+08:00</lastmod>
+    <lastmod>2018-09-23T15:30:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
