@@ -21,7 +21,7 @@
  assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39;  2、确认不是资源路径的问题以后再看history的配置问题
 正式环境打包时，在路由中使用了mode = history的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可
 如果需要设置网址无#，则需要改以下两个地方：
-export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、子路径需要加上去 routes: [ path:&#39;/acount&#39;, name:&#39;account&#39;, // 2、name需要加上去 component: account ] })  </description>
+export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、子路径需要加上去 routes: [ { path:&#39;/acount&#39;, name:&#39;account&#39;, // 2、name需要加上去 component: account } ] })  </description>
     </item>
     
   </channel>

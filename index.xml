@@ -20,7 +20,7 @@
       <description> 参考文章：
 http://blog.51cto.com/leeyan/1865448
 https://juejin.im/entry/5abaf4986fb9a028c42e3c46
-nginx常用两大功能： 1、负载均衡：决生产环境的客户端请求很多的时候,动态的去分散给各个服务器,缓解服务器压力,充分利用资源
+nginx常用两大功能： 1、负载均衡：在生产环境的客户端请求很多的时候,动态的去分散给各个服务器,缓解服务器压力,充分利用资源
 2、反向代理：反向代理将字符串和相应的服务器和端口匹配上,从而获取用户想要获取的内容
 nginx location 匹配规则: ~ 波浪线表示执行一个正则匹配，区分大小写
 ~* 表示执行一个正则匹配，不区分大小写
@@ -51,7 +51,7 @@ spa应用服务器部署：
  assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39;  2、确认不是资源路径的问题以后再看history的配置问题
 正式环境打包时，在路由中使用了mode = history的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可
 如果需要设置网址无#，则需要改以下两个地方：
-export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、子路径需要加上去 routes: [ path:&#39;/acount&#39;, name:&#39;account&#39;, // 2、name需要加上去 component: account ] })  </description>
+export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、子路径需要加上去 routes: [ { path:&#39;/acount&#39;, name:&#39;account&#39;, // 2、name需要加上去 component: account } ] })  </description>
     </item>
     
     <item>

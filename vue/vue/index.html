@@ -109,9 +109,11 @@ assetsPublicPath: '/' =&gt; assetsPublicPath: './'
   mode: 'history',
   base: '/', //  1、子路径需要加上去
   routes: [
-    path:'/acount',
-    name:'account',  //  2、name需要加上去
-    component: account
+    {
+      path:'/acount',
+      name:'account',  //  2、name需要加上去
+      component: account
+    }
   ]
 })
 </code></pre>
