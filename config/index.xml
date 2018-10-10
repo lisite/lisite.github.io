@@ -41,5 +41,16 @@ spa应用服务器部署：
 一、分屏操作 1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件) $ vim -on react.js vue.js... // 横向 $ vim -On react.js vue.js... // 纵向  2、新建文件并分屏，Ctrl+W n (new) 二、关闭分屏 1、快捷键可使用ctrl+W c，命令行如下： $ :only // 取消光标所在的屏  2、快捷键其他窗口ctrl+w o (other) 三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右 四、载入文件 1、在新的垂直分屏中打开文件 $ :vs  2、在新的水平分屏中打开文件 $ :sv  </description>
     </item>
     
+    <item>
+      <title>使用命令行在终端中高效搜索</title>
+      <link>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</link>
+      <pubDate>Tue, 26 Dec 2017 10:04:26 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</guid>
+      <description> Mac可以使用自带的Spotlight工具进行搜索，control + space可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢
+1、find命令行 // 在用户文件夹中搜索名字中包含vue的文件 find ~ -iname &amp;quot;*vue*&amp;quot; // 在指定的目录中寻找特定的文件 find ~/node_modules -iname &amp;quot;assert&amp;quot; // 在指定的目录中寻找特定的文件，并将搜索结果导出到桌面上（或者其他的目录） find ~/node_modules -iname &amp;quot;*babel-loader*&amp;quot; &amp;gt; Desktop/result.txt  2、mdfind命令 mdfind命令就是spotlight的终端界面
+// 搜索名字中包含vue的文件 mdfind -name &amp;quot;vue&amp;quot; // 搜索内容中包含requre(&#39;vue-router&#39;)的文件 mdfind &amp;quot;require(&#39;vue-router&#39;)&amp;quot; // 在指定文件夹中搜索指定类型（png）的文件 mdfind -onlyin ~/Documents png // 搜索并将结果导出到文件 mdfind -onlyin ~/Documents png &amp;gt; Desktop/result.txt  </description>
+    </item>
+    
   </channel>
 </rss>
