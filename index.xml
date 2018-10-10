@@ -6,10 +6,19 @@
     <description>Recent content on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Sep 2018 22:16:52 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 17:07:59 +0800</lastBuildDate>
     
 	<atom:link href="https://lisite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git命令珍藏</title>
+      <link>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
+      <pubDate>Wed, 10 Oct 2018 17:07:59 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
+      <description> 以下是本人收藏的一些git并不常用到的命令 // 清晰直观的查看commits git log --graph --pretty=one --abbrev-commit // merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失 git merge --no-ff -m &amp;quot;merge with no-ff&amp;quot; dev  </description>
+    </item>
     
     <item>
       <title>前端nginx配置</title>

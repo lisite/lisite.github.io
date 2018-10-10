@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Git命令珍藏</title>
+      <link>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
+      <pubDate>Wed, 10 Oct 2018 17:07:59 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
+      <description> 以下是本人收藏的一些git并不常用到的命令 // 清晰直观的查看commits git log --graph --pretty=one --abbrev-commit // merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失 git merge --no-ff -m &amp;quot;merge with no-ff&amp;quot; dev  </description>
+    </item>
+    
+    <item>
       <title>前端nginx配置</title>
       <link>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 19 Sep 2018 22:16:52 +0800</pubDate>
