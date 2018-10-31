@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Webpack配置详解</title>
+      <link>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 15 Oct 2018 11:58:35 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <description> 1、webpack 4.0.0 新版本下分割代码块配置，细粒度更高 optimization: { splitChunks: { chunks: &amp;quot;initial&amp;quot;, // 必须三选一： &amp;quot;initial&amp;quot; | &amp;quot;all&amp;quot;(默认就是all) | &amp;quot;async&amp;quot; minSize: 0, // 最小尺寸，默认0 minChunks: 1, // 最小 chunk ，默认1 maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 name: function(){}, // 名称，此选项可接收 function cacheGroups:{ // 这里开始设置缓存的 chunks priority: 0, // 缓存组优先级 vendor: { // key 为entry中定义的 入口名称 chunks: &amp;quot;initial&amp;quot;, // 必须三选一： &amp;quot;initial&amp;quot; | &amp;quot;all&amp;quot; | &amp;quot;async&amp;quot;(默认就是异步) test: /react|lodash/, // 正则规则验证，如果符合就提取 chunk name: &amp;quot;vendor&amp;quot;, // 要缓存的 分隔出来的 chunk 名称 minSize: 0, minChunks: 1, enforce: true, maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 reuseExistingChunk: true // 可设置是否重用该chunk（查看源码没有发现默认值） } } } }  </description>
+    </item>
+    
+    <item>
       <title>Git命令珍藏</title>
       <link>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
       <pubDate>Wed, 10 Oct 2018 17:07:59 +0800</pubDate>

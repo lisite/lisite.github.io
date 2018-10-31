@@ -12,6 +12,25 @@
     
     
     <item>
+      <title>单例模式</title>
+      <link>https://lisite.github.io/js/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 30 Oct 2018 21:10:35 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/js/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>设计模式之单例模式 单例模式是只能初始化一次的实例对象，早期的JQuery就使用单例模式，为了防止全局作用域下的方法和属性相互影响，将相关的属性和方法都放在一个命名空间中加以区分，如小红的命名空间为var hong = {}，小米的命名空间为var mi = {}，如果你想整个项目只用一个对象，单例模式将是最好的选择
+详细介绍单例模式 1、作为一个小的代码库 var Cool = { Utils: { formatDate: function(){}, cookie: { getCookie(){}, setCookie(){} } }, Tools: { tools_A: {}, tools_B: {} }, Axios:{ get: {}, post: {} }, Others: { ... } ... }  2、单例模式用作静态变量的获取  在js中并没有静态变量，按照常理来说，任何类型的变量都是可以被改变的，但是js的语言多变性可以通过单例模式实现，以下模拟配置文件的取值，保护配置文件不可更改 静态变量，按照管惯例为大写  var Conf = (function(){ var statics = { COUNT: 1, TITLE: &#39;fire&#39;, COLOR: &#39;red&#39; } return { get: function(name){ return statics[name] ?</description>
+    </item>
+    
+    <item>
+      <title>Koajs</title>
+      <link>https://lisite.github.io/js/koajs/</link>
+      <pubDate>Fri, 12 Oct 2018 16:13:23 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/js/koajs/</guid>
+      <description> Koa use module note  http-error http-assert cookies [koa-art-template]((https://github.com/koa-art-template)  </description>
+    </item>
+    
+    <item>
       <title>继承</title>
       <link>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</link>
       <pubDate>Thu, 16 Aug 2018 08:31:58 +0800</pubDate>
