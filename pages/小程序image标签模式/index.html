@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -76,65 +76,77 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <header class="major">
-                            <h1>Pages</h1>
-                        </header>
-                        <div class="content">
-                            <p>页面展示相关</p>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="two" class="spotlights">
-                    
-                    <section data-tilt style="min-height: 18em">
-                        <a href="/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/" class="image">
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>小程序image标签模式</h1>
+                                <span>2018-11-17 12:46:47 &#43;0800 CST</span>
+                            </header>
                             
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3>小程序image标签模式</h3>
-                                </header>
-                                <p>缩放 和 剪裁</p>
-                                <ul class="actions">
-                                    <li><a href="/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
+                            <p>image组件默认宽度300px、高度225px 注2：image组件中二维码/小程序码图片不支持长按识别。仅在wx.previewImage中支持长按识别。</p>
+
+<p>mode 有效值：</p>
+
+<p>mode 有 13 种模式，其中 <code>4</code> 种是<code>缩放</code>模式，<code>9</code> 种是<code>裁剪</code>模式。</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">模   式</th>
+<th align="center">值</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">缩放</td>
+<td align="center">scaleToFill</td>
+<td align="left">不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素</td>
+</tr>
+
+<tr>
+<td align="right">缩放</td>
+<td align="center">aspectFit</td>
+<td align="left">保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。</td>
+</tr>
+
+<tr>
+<td align="right">缩放</td>
+<td align="center">aspectFill</td>
+<td align="left">保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。</td>
+</tr>
+
+<tr>
+<td align="right">缩放</td>
+<td align="center">widthFix</td>
+<td align="left">宽度不变，高度自动变化，保持原图宽高比不变</td>
+</tr>
+
+<tr>
+<td align="right">裁剪</td>
+<td align="center">top/bottom/center/left/right/top left/top right/bottom left/bottom right/</td>
+<td align="left">不缩放图片，只显示图片的 ** 区域</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>在完全记得住之前，懒得每次去查官方文档，特此记录在案。。。</p>
+</blockquote>
+
                         </div>
                     </section>
-                    
-                    <section data-tilt style="min-height: 18em">
-                        <a href="/pages/pages/" class="image">
-                            
-                                <img src="/img/HTML5_sticker.svg" alt="" data-position="center center" />
-                            
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3>HTML5 API</h3>
-                                </header>
-                                <p>HTML5 持续让前端发挥更大的可能</p>
-                                <ul class="actions">
-                                    <li><a href="/pages/pages/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    
-                </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -160,7 +172,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -182,6 +193,6 @@
     
 
     
-        
+
     </body>
 </html>

@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>By HTML5 Up</span></a>
         <nav>
@@ -76,65 +76,43 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <header class="major">
-                            <h1>Pages</h1>
-                        </header>
-                        <div class="content">
-                            <p>页面展示相关</p>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="two" class="spotlights">
-                    
-                    <section data-tilt style="min-height: 18em">
-                        <a href="/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/" class="image">
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>Git工作流</h1>
+                                <span>2018-10-31 09:42:45 &#43;0800 CST</span>
+                            </header>
                             
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3>小程序image标签模式</h3>
-                                </header>
-                                <p>缩放 和 剪裁</p>
-                                <ul class="actions">
-                                    <li><a href="/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
+                            
+
+<h3 id="git-工作流">Git 工作流</h3>
+
+<p>通常 Git 的工作流程，采用的是功能驱动式开发。先有需求，再有功能分支或补丁分支。完成开发后，该分支就合并到主分支，然后删除分支。</p>
+
+<p>广泛使用的工作流程有三种：</p>
+
+<ul>
+<li>Git flow</li>
+<li>Github flow</li>
+<li>Gitlab flow</li>
+</ul>
+
+<p>Git flow 需要同时维护两个非常相似的分支 develop 和 master，比较适合具有较长版本发布周期的项目。
+Github flow 只需要维护一个分支，根据新需求从 master 拉取新分支，合并上线后，再删除新分支。
+Gitlab flow 在 master 分支以外，再建立不同的环境分支，通过不同环境的上下游关系合并新功能。</p>
+
                         </div>
                     </section>
-                    
-                    <section data-tilt style="min-height: 18em">
-                        <a href="/pages/pages/" class="image">
-                            
-                                <img src="/img/HTML5_sticker.svg" alt="" data-position="center center" />
-                            
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3>HTML5 API</h3>
-                                </header>
-                                <p>HTML5 持续让前端发挥更大的可能</p>
-                                <ul class="actions">
-                                    <li><a href="/pages/pages/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    
-                </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -160,7 +138,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -182,6 +159,6 @@
     
 
     
-        
+
     </body>
 </html>

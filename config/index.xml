@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Git工作流</title>
+      <link>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+      <pubDate>Wed, 31 Oct 2018 09:42:45 +0800</pubDate>
+      
+      <guid>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <description>Git 工作流 通常 Git 的工作流程，采用的是功能驱动式开发。先有需求，再有功能分支或补丁分支。完成开发后，该分支就合并到主分支，然后删除分支。
+广泛使用的工作流程有三种：
+ Git flow Github flow Gitlab flow  Git flow 需要同时维护两个非常相似的分支 develop 和 master，比较适合具有较长版本发布周期的项目。 Github flow 只需要维护一个分支，根据新需求从 master 拉取新分支，合并上线后，再删除新分支。 Gitlab flow 在 master 分支以外，再建立不同的环境分支，通过不同环境的上下游关系合并新功能。</description>
+    </item>
+    
+    <item>
       <title>Webpack配置详解</title>
       <link>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 15 Oct 2018 11:58:35 +0800</pubDate>
