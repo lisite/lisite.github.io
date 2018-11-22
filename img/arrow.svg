@@ -1,0 +1,27 @@
+<svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <style>
+        #left {
+          fill: transparent;
+          stroke: #39e8e0;
+          transition: all .5s;
+        }
+      </style>
+    </defs>
+    <script xmlns="http://www.w3.org/2000/svg" type="application/ecmascript"><![CDATA[
+      var isTrue = true;
+      function toggle(evt) {
+        var circle = evt.target;
+        if (isTrue) {
+          circle.setAttribute("d", "M10 20 20 10 30 20");
+          isTrue = false;
+        } else {
+          circle.setAttribute("d", "M10 20 20 30 30 20");
+          isTrue = true;
+          console.log('isTrue' + isTrue);
+        }
+      }
+    ]]> 
+    </script>
+    <path id="left" d="M10 20 20 30 30 20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" onclick="toggle(evt)" />
+  </svg>
