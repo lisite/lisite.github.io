@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Study hard, day day up!">
 	<meta name="author" content="大西瓜">
-	<meta name="generator" content="Hugo 0.47.1" />
+	<meta name="generator" content="Hugo 0.66.0" />
 	<title>大西瓜🍉</title>
 	<!-- Stylesheets -->
 	
@@ -88,12 +88,8 @@
                             
                                 <span class="image main"><img src="/img/computer.svg" alt="" /></span>
                             
-                            
-
-<p>Mac可以使用自带的Spotlight工具进行搜索，<code>control</code> + <code>space</code>可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢</p>
-
-<h4 id="1-find命令行">1、find命令行</h4>
-
+                            <p>Mac可以使用自带的Spotlight工具进行搜索，<code>control</code> + <code>space</code>可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢</p>
+<h4 id="1find命令行">1、find命令行</h4>
 <pre><code>// 在用户文件夹中搜索名字中包含vue的文件
 find ~ -iname &quot;*vue*&quot;
 
@@ -102,12 +98,8 @@ find ~/node_modules -iname &quot;assert&quot;
 
 // 在指定的目录中寻找特定的文件，并将搜索结果导出到桌面上（或者其他的目录）
 find ~/node_modules -iname &quot;*babel-loader*&quot; &gt; Desktop/result.txt
-</code></pre>
-
-<h4 id="2-mdfind命令">2、mdfind命令</h4>
-
+</code></pre><h4 id="2mdfind命令">2、mdfind命令</h4>
 <p><code>mdfind</code>命令就是spotlight的终端界面</p>
-
 <pre><code>// 搜索名字中包含vue的文件
 mdfind -name &quot;vue&quot;
 
@@ -120,7 +112,6 @@ mdfind -onlyin ~/Documents png
 // 搜索并将结果导出到文件
 mdfind -onlyin ~/Documents png &gt; Desktop/result.txt
 </code></pre>
-
                         </div>
                     </section>
             <!-- Disqus Inject -->

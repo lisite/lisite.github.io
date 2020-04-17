@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Study hard, day day up!">
 	<meta name="author" content="大西瓜">
-	<meta name="generator" content="Hugo 0.47.1" />
+	<meta name="generator" content="Hugo 0.66.0" />
 	<title>大西瓜🍉</title>
 	<!-- Stylesheets -->
 	
@@ -86,50 +86,46 @@
                                 <span>2018-10-10 17:07:59 &#43;0800 CST</span>
                             </header>
                             
-                            
-
-<h4 id="以下是本人收藏的一些git并不常用到的命令">以下是本人收藏的一些git并不常用到的命令</h4>
-
-<pre><code class="language-bash"># 临时的保存
-git stash  # 暂存
-git stash list  # 暂存的列表
-git stash pop  # 取回更改
-git stash save &quot;this is the tempory save&quot; # 给暂存添加描述
-git stash clear # 删除暂存的提交
-git stash save --keep-index # 只暂存没有被暂存的文件
+                            <h4 id="以下是本人收藏的一些git并不常用到的命令">以下是本人收藏的一些git并不常用到的命令</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 临时的保存</span>
+git stash  <span style="color:#75715e"># 暂存</span>
+git stash list  <span style="color:#75715e"># 暂存的列表</span>
+git stash pop  <span style="color:#75715e"># 取回更改</span>
+git stash save <span style="color:#e6db74">&#34;this is the tempory save&#34;</span> <span style="color:#75715e"># 给暂存添加描述</span>
+git stash clear <span style="color:#75715e"># 删除暂存的提交</span>
+git stash save --keep-index <span style="color:#75715e"># 只暂存没有被暂存的文件</span>
 
 
-# 清晰直观的查看commits
-git log --graph --pretty=one --abbrev-commit
+<span style="color:#75715e"># 清晰直观的查看commits</span>
+git log --graph --pretty<span style="color:#f92672">=</span>one --abbrev-commit
 
-# merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失
-git merge --no-ff -m &quot;merge with no-ff&quot; dev
+<span style="color:#75715e"># merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失</span>
+git merge --no-ff -m <span style="color:#e6db74">&#34;merge with no-ff&#34;</span> dev
 
-# 查找事故责任人，在vscode中可以使用gitlens插件，达到追踪责任人的问题
+<span style="color:#75715e"># 查找事故责任人，在vscode中可以使用gitlens插件，达到追踪责任人的问题</span>
 git blame 
 
-# 每隔X秒运行一次git pull
+<span style="color:#75715e"># 每隔X秒运行一次git pull</span>
 screen
-for((i=1;i&lt;=10000;i+=1)); do sleep X &amp;&amp; git pull; done
+<span style="color:#66d9ef">for</span><span style="color:#f92672">((</span>i<span style="color:#f92672">=</span>1;i&lt;<span style="color:#f92672">=</span>10000;i<span style="color:#f92672">+=</span>1<span style="color:#f92672">))</span>; <span style="color:#66d9ef">do</span> sleep X <span style="color:#f92672">&amp;&amp;</span> git pull; <span style="color:#66d9ef">done</span>
 
-# 忽略追踪文件中的变更
+<span style="color:#75715e"># 忽略追踪文件中的变更</span>
 git update-index --assume-unchanged
 
-# 将远程提交合并到自己的分支中
-# 也可以使用git cherry-pick 来选择给定SHA值的提交，然后将其合并到当前分支中
+<span style="color:#75715e"># 将远程提交合并到自己的分支中</span>
+<span style="color:#75715e"># 也可以使用git cherry-pick 来选择给定SHA值的提交，然后将其合并到当前分支中</span>
 git cherry-pick SHA-commit
 
-# 应用来自于不相关的本地仓库的补丁（暂时没遇到此类需求，留着备用）
-# 场景：将另一个不相关的本地仓库的提交补丁应用到当前仓库
-git --git-dir=/.git format-patch -k -1 --stdout  | git am -3 -k
+<span style="color:#75715e"># 应用来自于不相关的本地仓库的补丁（暂时没遇到此类需求，留着备用）</span>
+<span style="color:#75715e"># 场景：将另一个不相关的本地仓库的提交补丁应用到当前仓库</span>
+git --git-dir<span style="color:#f92672">=</span>/.git format-patch -k -1 --stdout  | git am -3 -k
 
-# 将子目录分隔为新的仓库（有遇到过这样的case，以下将是很好的解决方案）
+<span style="color:#75715e"># 将子目录分隔为新的仓库（有遇到过这样的case，以下将是很好的解决方案）</span>
 git filter-branch --prune-empty --subdirectory-filter master
 
-# 在解决合并冲突的时候使用某一种分析工具，比如vimdiff 
+<span style="color:#75715e"># 在解决合并冲突的时候使用某一种分析工具，比如vimdiff</span> 
 git config --global merge.tool vimdiff
-</code></pre>
-
+</code></pre></div>
                         </div>
                     </section>
             <!-- Disqus Inject -->

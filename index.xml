@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forty</title>
@@ -17,8 +17,7 @@
       <pubDate>Thu, 22 Nov 2018 15:14:45 +0800</pubDate>
       
       <guid>https://lisite.github.io/pages/svg/</guid>
-      <description>这是一个用 img 标签引用的 svg 图片  
-点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;quot;/img/arrow.svg&amp;quot; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;quot;image/svg+xml&amp;quot; data=&amp;quot;/img/arrow.svg&amp;quot; role=&amp;quot;img&amp;quot; aria-label=&amp;quot;shapes animation&amp;quot; &amp;gt; &amp;lt;div role=&amp;quot;img&amp;quot; class=&amp;quot;shapes-fallback&amp;quot; aria-label=&amp;quot;shapes animation&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt;  firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
+      <description>这是一个用 img 标签引用的 svg 图片 点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;#34;/img/arrow.svg&amp;#34; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;#34;image/svg+xml&amp;#34; data=&amp;#34;/img/arrow.svg&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34; &amp;gt; &amp;lt;div role=&amp;#34;img&amp;#34; class=&amp;#34;shapes-fallback&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt; firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
     </item>
     
     <item>
@@ -52,7 +51,7 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
       
       <guid>https://lisite.github.io/js/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
       <description>设计模式之单例模式 单例模式是只能初始化一次的实例对象，早期的JQuery就使用单例模式，为了防止全局作用域下的方法和属性相互影响，将相关的属性和方法都放在一个命名空间中加以区分，如小红的命名空间为var hong = {}，小米的命名空间为var mi = {}，如果你想整个项目只用一个对象，单例模式将是最好的选择
-详细介绍单例模式 1、作为一个小的代码库 var Cool = { Utils: { formatDate: function(){}, cookie: { getCookie(){}, setCookie(){} } }, Tools: { tools_A: {}, tools_B: {} }, Axios:{ get: {}, post: {} }, Others: { ... } ... }  2、单例模式用作静态变量的获取  在js中并没有静态变量，按照常理来说，任何类型的变量都是可以被改变的，但是js的语言多变性可以通过单例模式实现，以下模拟配置文件的取值，保护配置文件不可更改 静态变量，按照管惯例为大写  var Conf = (function(){ var statics = { COUNT: 1, TITLE: &#39;fire&#39;, COLOR: &#39;red&#39; } return { get: function(name){ return statics[name] ?</description>
+详细介绍单例模式 1、作为一个小的代码库 var Cool = { Utils: { formatDate: function(){}, cookie: { getCookie(){}, setCookie(){} } }, Tools: { tools_A: {}, tools_B: {} }, Axios:{ get: {}, post: {} }, Others: { ... } ... } 2、单例模式用作静态变量的获取  在js中并没有静态变量，按照常理来说，任何类型的变量都是可以被改变的，但是js的语言多变性可以通过单例模式实现，以下模拟配置文件的取值，保护配置文件不可更改 静态变量，按照管惯例为大写  var Conf = (function(){ var statics = { COUNT: 1, TITLE: &amp;#39;fire&amp;#39;, COLOR: &amp;#39;red&amp;#39; } return { get: function(name){ return statics[name] ? statics[name] : null } } })() </description>
     </item>
     
     <item>
@@ -61,7 +60,7 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
       <pubDate>Mon, 15 Oct 2018 11:58:35 +0800</pubDate>
       
       <guid>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
-      <description> 1、webpack 4.0.0 新版本下分割代码块配置，细粒度更高 optimization: { splitChunks: { chunks: &amp;quot;initial&amp;quot;, // 必须三选一： &amp;quot;initial&amp;quot; | &amp;quot;all&amp;quot;(默认就是all) | &amp;quot;async&amp;quot; minSize: 0, // 最小尺寸，默认0 minChunks: 1, // 最小 chunk ，默认1 maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 name: function(){}, // 名称，此选项可接收 function cacheGroups:{ // 这里开始设置缓存的 chunks priority: 0, // 缓存组优先级 vendor: { // key 为entry中定义的 入口名称 chunks: &amp;quot;initial&amp;quot;, // 必须三选一： &amp;quot;initial&amp;quot; | &amp;quot;all&amp;quot; | &amp;quot;async&amp;quot;(默认就是异步) test: /react|lodash/, // 正则规则验证，如果符合就提取 chunk name: &amp;quot;vendor&amp;quot;, // 要缓存的 分隔出来的 chunk 名称 minSize: 0, minChunks: 1, enforce: true, maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 reuseExistingChunk: true // 可设置是否重用该chunk（查看源码没有发现默认值） } } } }  </description>
+      <description>1、webpack 4.0.0 新版本下分割代码块配置，细粒度更高 optimization: { splitChunks: { chunks: &amp;#34;initial&amp;#34;, // 必须三选一： &amp;#34;initial&amp;#34; | &amp;#34;all&amp;#34;(默认就是all) | &amp;#34;async&amp;#34; minSize: 0, // 最小尺寸，默认0 minChunks: 1, // 最小 chunk ，默认1 maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 name: function(){}, // 名称，此选项可接收 function cacheGroups:{ // 这里开始设置缓存的 chunks priority: 0, // 缓存组优先级 vendor: { // key 为entry中定义的 入口名称 chunks: &amp;#34;initial&amp;#34;, // 必须三选一： &amp;#34;initial&amp;#34; | &amp;#34;all&amp;#34; | &amp;#34;async&amp;#34;(默认就是异步) test: /react|lodash/, // 正则规则验证，如果符合就提取 chunk name: &amp;#34;vendor&amp;#34;, // 要缓存的 分隔出来的 chunk 名称 minSize: 0, minChunks: 1, enforce: true, maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 reuseExistingChunk: true // 可设置是否重用该chunk（查看源码没有发现默认值） } } } } </description>
     </item>
     
     <item>
@@ -70,7 +69,7 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
       <pubDate>Fri, 12 Oct 2018 16:13:23 +0800</pubDate>
       
       <guid>https://lisite.github.io/js/koajs/</guid>
-      <description> Koa use module note  http-error http-assert cookies [koa-art-template]((https://github.com/koa-art-template)  </description>
+      <description>Koa use module note  http-error http-assert cookies [koa-art-template]((https://github.com/koa-art-template)  </description>
     </item>
     
     <item>
@@ -79,7 +78,7 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
       <pubDate>Wed, 10 Oct 2018 17:07:59 +0800</pubDate>
       
       <guid>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
-      <description>以下是本人收藏的一些git并不常用到的命令 # 临时的保存 git stash # 暂存 git stash list # 暂存的列表 git stash pop # 取回更改 git stash save &amp;quot;this is the tempory save&amp;quot; # 给暂存添加描述 git stash clear # 删除暂存的提交 git stash save --keep-index # 只暂存没有被暂存的文件 # 清晰直观的查看commits git log --graph --pretty=one --abbrev-commit # merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失 git merge --no-ff -m &amp;quot;merge with no-ff&amp;quot; dev # 查找事故责任人，在vscode中可以使用gitlens插件，达到追踪责任人的问题 git blame # 每隔X秒运行一次git pull screen for((i=1;i&amp;lt;=10000;i+=1)); do sleep X &amp;amp;&amp;amp; git pull; done # 忽略追踪文件中的变更 git update-index --assume-unchanged # 将远程提交合并到自己的分支中 # 也可以使用git cherry-pick 来选择给定SHA值的提交，然后将其合并到当前分支中 git cherry-pick SHA-commit # 应用来自于不相关的本地仓库的补丁（暂时没遇到此类需求，留着备用） # 场景：将另一个不相关的本地仓库的提交补丁应用到当前仓库 git --git-dir=/.</description>
+      <description>以下是本人收藏的一些git并不常用到的命令 # 临时的保存 git stash # 暂存 git stash list # 暂存的列表 git stash pop # 取回更改 git stash save &amp;#34;this is the tempory save&amp;#34; # 给暂存添加描述 git stash clear # 删除暂存的提交 git stash save --keep-index # 只暂存没有被暂存的文件 # 清晰直观的查看commits git log --graph --pretty=one --abbrev-commit # merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失 git merge --no-ff -m &amp;#34;merge with no-ff&amp;#34; dev # 查找事故责任人，在vscode中可以使用gitlens插件，达到追踪责任人的问题 git blame # 每隔X秒运行一次git pull screen for((i=1;i&amp;lt;=10000;i+=1)); do sleep X &amp;amp;&amp;amp; git pull; done # 忽略追踪文件中的变更 git update-index --assume-unchanged # 将远程提交合并到自己的分支中 # 也可以使用git cherry-pick 来选择给定SHA值的提交，然后将其合并到当前分支中 git cherry-pick SHA-commit # 应用来自于不相关的本地仓库的补丁（暂时没遇到此类需求，留着备用） # 场景：将另一个不相关的本地仓库的提交补丁应用到当前仓库 git --git-dir=/.</description>
     </item>
     
     <item>
@@ -88,18 +87,17 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
       <pubDate>Wed, 19 Sep 2018 22:16:52 +0800</pubDate>
       
       <guid>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</guid>
-      <description> 参考文章：
+      <description>参考文章：
 http://blog.51cto.com/leeyan/1865448
 https://juejin.im/entry/5abaf4986fb9a028c42e3c46
-nginx常用两大功能： 1、负载均衡：在生产环境的客户端请求很多的时候,动态的去分散给各个服务器,缓解服务器压力,充分利用资源
-2、反向代理：反向代理将字符串和相应的服务器和端口匹配上,从而获取用户想要获取的内容
+nginx常用两大功能： 1、负载均衡：在生产环境的客户端请求很多的时候,动态的去分散给各个服务器,缓解服务器压力,充分利用资源2、反向代理：反向代理将字符串和相应的服务器和端口匹配上,从而获取用户想要获取的内容
 nginx location 匹配规则: ~ 波浪线表示执行一个正则匹配，区分大小写
 ~* 表示执行一个正则匹配，不区分大小写
 ^~ 表示普通字符匹配，如果该选项匹配，只匹配该选项，不匹配别的选项，一般用来匹配目录
 = 进行普通字符精确匹配
 @ 定义一个命名的 location，使用在内部定向时，例如 error_page, try_files
 spa应用服务器部署：
- location / { root /www/home/build/; index index.html index.html index.php; try_files $uri $uri/ /index.html; } location ^~ /api/ { proxy_pass http://api.site; }  </description>
+ location / { root /www/home/build/; index index.html index.html index.php; try_files $uri $uri/ /index.html; } location ^~ /api/ { proxy_pass http://api.site; } </description>
     </item>
     
     <item>
@@ -108,8 +106,8 @@ spa应用服务器部署：
       <pubDate>Sat, 01 Sep 2018 10:29:01 +0800</pubDate>
       
       <guid>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</guid>
-      <description> 使用vim分屏可以提高操作效率，也可以用来装*
-一、分屏操作 1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件) $ vim -on react.js vue.js... // 横向 $ vim -On react.js vue.js... // 纵向  2、新建文件并分屏，Ctrl+W n (new) 二、关闭分屏 1、快捷键可使用ctrl+W c，命令行如下： $ :only // 取消光标所在的屏  2、快捷键其他窗口ctrl+w o (other) 三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右 四、载入文件 1、在新的垂直分屏中打开文件 $ :vs  2、在新的水平分屏中打开文件 $ :sv  </description>
+      <description>使用vim分屏可以提高操作效率，也可以用来装*
+ 一、分屏操作 1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件) $ vim -on react.js vue.js... // 横向 $ vim -On react.js vue.js... // 纵向 2、新建文件并分屏，Ctrl+W n (new) 二、关闭分屏 1、快捷键可使用ctrl+W c，命令行如下： $ :only // 取消光标所在的屏 2、快捷键其他窗口ctrl+w o (other) 三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右 四、载入文件 1、在新的垂直分屏中打开文件 $ :vs 2、在新的水平分屏中打开文件 $ :sv </description>
     </item>
     
     <item>
@@ -118,11 +116,11 @@ spa应用服务器部署：
       <pubDate>Thu, 23 Aug 2018 15:30:26 +0000</pubDate>
       
       <guid>https://lisite.github.io/vue/vue/</guid>
-      <description> vue在生产环境打包时会出现页面空白的问题 1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径
- assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39;  2、确认不是资源路径的问题以后再看history的配置问题
+      <description>vue在生产环境打包时会出现页面空白的问题 1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径
+ assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39; 2、确认不是资源路径的问题以后再看history的配置问题
 正式环境打包时，在路由中使用了mode = history的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可
 如果需要设置网址无#，则需要改以下两个地方：
-export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、子路径需要加上去 routes: [ { path:&#39;/acount&#39;, name:&#39;account&#39;, // 2、name需要加上去 component: account } ] })  </description>
+export default new Router({ mode: &amp;#39;history&amp;#39;, base: &amp;#39;/&amp;#39;, // 1、子路径需要加上去  routes: [ { path:&amp;#39;/acount&amp;#39;, name:&amp;#39;account&amp;#39;, // 2、name需要加上去  component: account } ] }) </description>
     </item>
     
     <item>
@@ -132,7 +130,7 @@ export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、�
       
       <guid>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
       <description>对象A继承对象B的属性和方法，也可能继承对象B的原型对象的属性和方法，或者两者兼而有之，可以使用instanceof来判断某个对象是否继承了某个类
- 1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化  2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则  3.</description>
+ 1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化 2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则 3.混合继承 // 同时使用👆，1和2 的继承方式进行组合 function SuperClass(name){ this.</description>
     </item>
     
     <item>
@@ -143,9 +141,9 @@ export default new Router({ mode: &#39;history&#39;, base: &#39;/&#39;, // 1、�
       <guid>https://lisite.github.io/js/this/</guid>
       <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
 es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
- var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1  2、函数作为对象的方法调用时，this指向这个上级对象。
- var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } }  3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
- egA: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === window }, 1000) } } father.son() egB: var father = { age: 50, son: function(){ setTimeout(function(){ console.</description>
+ var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1 2、函数作为对象的方法调用时，this指向这个上级对象。
+ var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } } 3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
+ egA: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === window }, 1000) } } father.son() egB: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === father }.</description>
     </item>
     
     <item>
@@ -154,12 +152,11 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
       <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
       
       <guid>https://lisite.github.io/pages/pages/</guid>
-      <description> html5
-1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
- &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
+      <description>html51、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
+ &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt; 建议在移动端测试一下
 2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
-3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持
-Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurrentPosition, clearWatch, watchPosition}  </description>
+3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt; 388谷歌上样式显示还不错，IE10支持
+Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurrentPosition, clearWatch, watchPosition} </description>
     </item>
     
     <item>
@@ -168,10 +165,10 @@ Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurr
       <pubDate>Wed, 11 Apr 2018 22:26:09 -0500</pubDate>
       
       <guid>https://lisite.github.io/js/magna/</guid>
-      <description> 1、万物皆对象
+      <description>1、万物皆对象
 2、所有对象的隐式原型指向他的构造函数（父类）的显示原型
 3、基于第二点的关系，会形成一个链状结构
-指向示例： obj = {say: function(){console.log(&#39;hello world&#39;)}} obj.__prototype__ = Object.prototype;  概括的描述：  对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。
+指向示例： obj = {say: function(){console.log(&#39;hello world&#39;)}} obj.__prototype__ = Object.prototype; 概括的描述：  对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。
  </description>
     </item>
     
@@ -181,7 +178,7 @@ Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurr
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
       
       <guid>https://lisite.github.io/react/tempus/</guid>
-      <description> 关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
+      <description>关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
  优点：
 1、它让你在编写代码的时候同时也在思考你的应用。
 只言片语： 组件的本质是一个函数，而组件的属性会被以一个对象的形式（props）传递给该函数。
@@ -198,9 +195,9 @@ Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =
       <pubDate>Tue, 26 Dec 2017 10:04:26 +0800</pubDate>
       
       <guid>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</guid>
-      <description> Mac可以使用自带的Spotlight工具进行搜索，control + space可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢
-1、find命令行 // 在用户文件夹中搜索名字中包含vue的文件 find ~ -iname &amp;quot;*vue*&amp;quot; // 在指定的目录中寻找特定的文件 find ~/node_modules -iname &amp;quot;assert&amp;quot; // 在指定的目录中寻找特定的文件，并将搜索结果导出到桌面上（或者其他的目录） find ~/node_modules -iname &amp;quot;*babel-loader*&amp;quot; &amp;gt; Desktop/result.txt  2、mdfind命令 mdfind命令就是spotlight的终端界面
-// 搜索名字中包含vue的文件 mdfind -name &amp;quot;vue&amp;quot; // 搜索内容中包含requre(&#39;vue-router&#39;)的文件 mdfind &amp;quot;require(&#39;vue-router&#39;)&amp;quot; // 在指定文件夹中搜索指定类型（png）的文件 mdfind -onlyin ~/Documents png // 搜索并将结果导出到文件 mdfind -onlyin ~/Documents png &amp;gt; Desktop/result.txt  </description>
+      <description>Mac可以使用自带的Spotlight工具进行搜索，control + space可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢
+1、find命令行 // 在用户文件夹中搜索名字中包含vue的文件 find ~ -iname &amp;quot;*vue*&amp;quot; // 在指定的目录中寻找特定的文件 find ~/node_modules -iname &amp;quot;assert&amp;quot; // 在指定的目录中寻找特定的文件，并将搜索结果导出到桌面上（或者其他的目录） find ~/node_modules -iname &amp;quot;*babel-loader*&amp;quot; &amp;gt; Desktop/result.txt 2、mdfind命令 mdfind命令就是spotlight的终端界面
+// 搜索名字中包含vue的文件 mdfind -name &amp;quot;vue&amp;quot; // 搜索内容中包含requre(&#39;vue-router&#39;)的文件 mdfind &amp;quot;require(&#39;vue-router&#39;)&amp;quot; // 在指定文件夹中搜索指定类型（png）的文件 mdfind -onlyin ~/Documents png // 搜索并将结果导出到文件 mdfind -onlyin ~/Documents png &amp;gt; Desktop/result.txt </description>
     </item>
     
     <item>
@@ -210,27 +207,37 @@ Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =
       
       <guid>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</guid>
       <description>2010年6月，苹果发布 iPhone 4。当年中国的智能手机销量是3610万部，2011年就猛增到9060万部，2012年更是飙升到2.142亿部。很显然，手机软件（尤其是即时通信软件）即将爆发。
-2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;rdquo;微信&amp;rdquo;。
-2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;rdquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;rdquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
-2011年5月，微信推出了&amp;rdquo;语音消息&amp;rdquo;这个关键功能，让用户的手机变成对讲机那样工作，每条语音消息不能超过60秒。马化腾后来说：&amp;rdquo;语音消息将不习惯在智能手机上打字的商人转变为微信用户。&amp;rdquo;微信的每日用户增长从 10000 增加到了 60000。
-2011年7月，微信增加了基于位置的服务&amp;rdquo;附近的人&amp;rdquo;、&amp;rdquo;漂流瓶&amp;rdquo;和&amp;rdquo;摇一摇&amp;rdquo;，允许用户与附近的陌生人联系。每日用户增长跳升到了100,000。
+2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;quot;微信&amp;rdquo;。
+2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;ldquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;ldquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
+2011年5月，微信推出了&amp;quot;语音消息&amp;quot;这个关键功能，让用户的手机变成对讲机那样工作，每条语音消息不能超过60秒。马化腾后来说：&amp;ldquo;语音消息将不习惯在智能手机上打字的商人转变为微信用户。&amp;ldquo;微信的每日用户增长从 10000 增加到了 60000。
+2011年7月，微信增加了基于位置的服务&amp;quot;附近的人&amp;rdquo;、&amp;ldquo;漂流瓶&amp;quot;和&amp;quot;摇一摇&amp;rdquo;，允许用户与附近的陌生人联系。每日用户增长跳升到了100,000。
 2012年3月，微信达到1亿注册用户，这时距离产品推出433天。
-2012年4月，微信开始国际化，英文名称定为&amp;rdquo;WeChat&amp;rdquo;，并推出了多语言版本。
-2012年5月，微信推出&amp;rdquo;朋友圈&amp;rdquo;，允许用户分享自己的生活。这使得微信从一个即时通信软件，向社交网络发展。
-2012年8月，微信增加&amp;rdquo;视频通话&amp;rdquo;功能，并且提供了网页版。
+2012年4月，微信开始国际化，英文名称定为&amp;quot;WeChat&amp;rdquo;，并推出了多语言版本。
+2012年5月，微信推出&amp;quot;朋友圈&amp;rdquo;，允许用户分享自己的生活。这使得微信从一个即时通信软件，向社交网络发展。
+2012年8月，微信增加&amp;quot;视频通话&amp;quot;功能，并且提供了网页版。
 2012年9月17日，微信达到2亿注册用户。
 2013年1月15日，达到3亿注册用户，成为全球用户最多的通信软件。
-2013年8月，微信添加了公众号、微信支付、表情商店和游戏中心等大量功能。公众号使得微信变成内容平台，游戏中心使得微信具备娱乐功能，游戏中心的第一个游戏是&amp;rdquo;飞机大战&amp;rdquo;。微信支付最早只限于游戏内的支付，后来才演变成通用的支付工具。
+2013年8月，微信添加了公众号、微信支付、表情商店和游戏中心等大量功能。公众号使得微信变成内容平台，游戏中心使得微信具备娱乐功能，游戏中心的第一个游戏是&amp;quot;飞机大战&amp;rdquo;。微信支付最早只限于游戏内的支付，后来才演变成通用的支付工具。
 2013年8月，中国以外的注册用户达到1亿。
-2014年1月，腾讯联合创始人张志东希望改变传统的向腾讯员工发红包的形式，就委托微信团队的一个工程师开发了微信的红包功能。这个功能在春节前夕向公众开放，结果一炮而红，那年春节超过800万中国人收到超过4000万个红包。为了发红包，用户开始将他们的银行账户，绑定到微信手机钱包，这使得微信有能力与支付宝竞争。阿里巴巴创始人马云称这件事是&amp;rdquo;袭击珍珠港&amp;rdquo;。
+2014年1月，腾讯联合创始人张志东希望改变传统的向腾讯员工发红包的形式，就委托微信团队的一个工程师开发了微信的红包功能。这个功能在春节前夕向公众开放，结果一炮而红，那年春节超过800万中国人收到超过4000万个红包。为了发红包，用户开始将他们的银行账户，绑定到微信手机钱包，这使得微信有能力与支付宝竞争。阿里巴巴创始人马云称这件事是&amp;quot;袭击珍珠港&amp;rdquo;。
 2014年10月，朋友圈允许发布短视频。
 2015年5月，增加微信运动功能，可以记录用户每天走了多少步，并给出排名。
 2016年1月，张小龙宣布正在研发小程序，这个功能允许商家和第三方开发者在微信里面运行自己的应用程序，完成一些特殊功能，比如点餐和购物，用户不用额外安装。对于微信来说，小程序可以提供用户粘性，并且增加线下服务的能力。
 2017年1月，小程序的开发指南和 API 正式发布。
-2017年12月，微信正式推出小游戏，它属于小程序的一个类别。同时发布了一个小游戏&amp;rdquo;跳一跳&amp;rdquo;作为演示，这个游戏的日活跃用户达到1亿。
+2017年12月，微信正式推出小游戏，它属于小程序的一个类别。同时发布了一个小游戏&amp;quot;跳一跳&amp;quot;作为演示，这个游戏的日活跃用户达到1亿。
 2018年2月，除夕夜共有6.88亿用户使用了微信红包。当月，微信的全球活跃用户达到了10亿。
 2018年6月，微信小程序数量超过100万，用户超过6亿。小程序将最终使得微信成为一个生态体系，其中可以进行各种各样的业务，为腾讯创造出无数的商业可能。
 The end</description>
+    </item>
+    
+    <item>
+      <title>Animate</title>
+      <link>https://lisite.github.io/svg/animate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lisite.github.io/svg/animate/</guid>
+      <description>example:
+&amp;lt;svg width=&amp;#34;200&amp;#34; height=&amp;#34;200&amp;#34; x=&amp;#34;0&amp;#34; y=&amp;#34;0&amp;#34; viewBox=&amp;#34;0 0 200 200&amp;#34; &amp;gt; &amp;lt;g stroke=&amp;#34;#ffffff&amp;#34; fill=&amp;#34;none&amp;#34; stroke-width=&amp;#34;4&amp;#34;&amp;gt; &amp;lt;circle cx=&amp;#34;100&amp;#34; cy=&amp;#34;100&amp;#34; r=&amp;#34;10&amp;#34; stroke-opacity=&amp;#34;0&amp;#34;&amp;gt; &amp;lt;animate attributeName=&amp;#34;r&amp;#34; begin=&amp;#34;0s&amp;#34; dur=&amp;#34;1.8s&amp;#34; values=&amp;#34;1; 20&amp;#34; calcMode=&amp;#34;spline&amp;#34; keyTimes=&amp;#34;0; 1&amp;#34; keySplines=&amp;#34;0.165, 0.84, 0.44, 1&amp;#34; repeatCount=&amp;#34;indefinite&amp;#34;/&amp;gt; &amp;lt;animate attributeName=&amp;#34;stroke-opacity&amp;#34; begin=&amp;#34;0s&amp;#34; dur=&amp;#34;1.8s&amp;#34; values=&amp;#34;1; 0&amp;#34; calcMode=&amp;#34;spline&amp;#34; keyTimes=&amp;#34;0; 1&amp;#34; keySplines=&amp;#34;0.3, 0.61, 0.355, 1&amp;#34; repeatCount=&amp;#34;indefinite&amp;#34;/&amp;gt; &amp;lt;/circle&amp;gt; &amp;lt;circle cx=&amp;#34;100&amp;#34; cy=&amp;#34;100&amp;#34; r=&amp;#34;10&amp;#34; stroke-opacity=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/circle&amp;gt; &amp;lt;/g&amp;gt; &amp;lt;/svg&amp;gt;   attributeName: I guess this is about which attribute you want to animate.</description>
     </item>
     
     <item>

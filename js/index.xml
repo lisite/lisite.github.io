@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Js on Forty</title>
@@ -18,7 +18,7 @@
       
       <guid>https://lisite.github.io/js/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
       <description>设计模式之单例模式 单例模式是只能初始化一次的实例对象，早期的JQuery就使用单例模式，为了防止全局作用域下的方法和属性相互影响，将相关的属性和方法都放在一个命名空间中加以区分，如小红的命名空间为var hong = {}，小米的命名空间为var mi = {}，如果你想整个项目只用一个对象，单例模式将是最好的选择
-详细介绍单例模式 1、作为一个小的代码库 var Cool = { Utils: { formatDate: function(){}, cookie: { getCookie(){}, setCookie(){} } }, Tools: { tools_A: {}, tools_B: {} }, Axios:{ get: {}, post: {} }, Others: { ... } ... }  2、单例模式用作静态变量的获取  在js中并没有静态变量，按照常理来说，任何类型的变量都是可以被改变的，但是js的语言多变性可以通过单例模式实现，以下模拟配置文件的取值，保护配置文件不可更改 静态变量，按照管惯例为大写  var Conf = (function(){ var statics = { COUNT: 1, TITLE: &#39;fire&#39;, COLOR: &#39;red&#39; } return { get: function(name){ return statics[name] ?</description>
+详细介绍单例模式 1、作为一个小的代码库 var Cool = { Utils: { formatDate: function(){}, cookie: { getCookie(){}, setCookie(){} } }, Tools: { tools_A: {}, tools_B: {} }, Axios:{ get: {}, post: {} }, Others: { ... } ... } 2、单例模式用作静态变量的获取  在js中并没有静态变量，按照常理来说，任何类型的变量都是可以被改变的，但是js的语言多变性可以通过单例模式实现，以下模拟配置文件的取值，保护配置文件不可更改 静态变量，按照管惯例为大写  var Conf = (function(){ var statics = { COUNT: 1, TITLE: &amp;#39;fire&amp;#39;, COLOR: &amp;#39;red&amp;#39; } return { get: function(name){ return statics[name] ? statics[name] : null } } })() </description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Fri, 12 Oct 2018 16:13:23 +0800</pubDate>
       
       <guid>https://lisite.github.io/js/koajs/</guid>
-      <description> Koa use module note  http-error http-assert cookies [koa-art-template]((https://github.com/koa-art-template)  </description>
+      <description>Koa use module note  http-error http-assert cookies [koa-art-template]((https://github.com/koa-art-template)  </description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@
       
       <guid>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
       <description>对象A继承对象B的属性和方法，也可能继承对象B的原型对象的属性和方法，或者两者兼而有之，可以使用instanceof来判断某个对象是否继承了某个类
- 1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化  2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则  3.</description>
+ 1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化 2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则 3.混合继承 // 同时使用👆，1和2 的继承方式进行组合 function SuperClass(name){ this.</description>
     </item>
     
     <item>
@@ -48,9 +48,9 @@
       <guid>https://lisite.github.io/js/this/</guid>
       <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
 es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
- var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1  2、函数作为对象的方法调用时，this指向这个上级对象。
- var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } }  3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
- egA: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === window }, 1000) } } father.son() egB: var father = { age: 50, son: function(){ setTimeout(function(){ console.</description>
+ var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1 2、函数作为对象的方法调用时，this指向这个上级对象。
+ var father = { age: 50, son: function(){ console.log(this); // 结果为father这个对象 } } 3、使用bind、call、apply绑定的对象，this指的是绑定的对象，这三种方法可以改变this的指向。
+ egA: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === window }, 1000) } } father.son() egB: var father = { age: 50, son: function(){ setTimeout(function(){ console.log(this) // this === father }.</description>
     </item>
     
     <item>
@@ -59,10 +59,10 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
       <pubDate>Wed, 11 Apr 2018 22:26:09 -0500</pubDate>
       
       <guid>https://lisite.github.io/js/magna/</guid>
-      <description> 1、万物皆对象
+      <description>1、万物皆对象
 2、所有对象的隐式原型指向他的构造函数（父类）的显示原型
 3、基于第二点的关系，会形成一个链状结构
-指向示例： obj = {say: function(){console.log(&#39;hello world&#39;)}} obj.__prototype__ = Object.prototype;  概括的描述：  对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。
+指向示例： obj = {say: function(){console.log(&#39;hello world&#39;)}} obj.__prototype__ = Object.prototype; 概括的描述：  对象o中存在一个隐藏的成员，这个成员指向其父类的原型（o的构造函数），如果父类的原型是另外一个类的实例的话，则这个原型对象中也有一个隐藏的成员指向指向另外一个类的原型，这种链条⛓️将许多对象或类串联起来，即是原型链。
  </description>
     </item>
     

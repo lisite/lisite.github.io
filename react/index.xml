@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on Forty</title>
@@ -17,7 +17,7 @@
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
       
       <guid>https://lisite.github.io/react/tempus/</guid>
-      <description> 关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
+      <description>关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
  优点：
 1、它让你在编写代码的时候同时也在思考你的应用。
 只言片语： 组件的本质是一个函数，而组件的属性会被以一个对象的形式（props）传递给该函数。

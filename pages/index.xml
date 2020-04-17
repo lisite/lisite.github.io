@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Forty</title>
@@ -17,8 +17,7 @@
       <pubDate>Thu, 22 Nov 2018 15:14:45 +0800</pubDate>
       
       <guid>https://lisite.github.io/pages/svg/</guid>
-      <description>这是一个用 img 标签引用的 svg 图片  
-点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;quot;/img/arrow.svg&amp;quot; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;quot;image/svg+xml&amp;quot; data=&amp;quot;/img/arrow.svg&amp;quot; role=&amp;quot;img&amp;quot; aria-label=&amp;quot;shapes animation&amp;quot; &amp;gt; &amp;lt;div role=&amp;quot;img&amp;quot; class=&amp;quot;shapes-fallback&amp;quot; aria-label=&amp;quot;shapes animation&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt;  firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
+      <description>这是一个用 img 标签引用的 svg 图片 点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;#34;/img/arrow.svg&amp;#34; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;#34;image/svg+xml&amp;#34; data=&amp;#34;/img/arrow.svg&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34; &amp;gt; &amp;lt;div role=&amp;#34;img&amp;#34; class=&amp;#34;shapes-fallback&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt; firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
     </item>
     
     <item>
@@ -40,12 +39,11 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
       <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
       
       <guid>https://lisite.github.io/pages/pages/</guid>
-      <description> html5
-1、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
- &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt;  建议在移动端测试一下
+      <description>html51、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
+ &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt; 建议在移动端测试一下
 2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
-3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt;  + =   &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt;  388 谷歌上样式显示还不错，IE10支持
-Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurrentPosition, clearWatch, watchPosition}  </description>
+3、&amp;lt;output&amp;gt;标签：用户计算或者操作的结果 &amp;lt;form oninput=&amp;quot;result.value=parseInt(a.value)+parseInt(b.value)&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;range&amp;quot; name=&amp;quot;b&amp;quot; value=&amp;quot;50&amp;quot; /&amp;gt; + &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;a&amp;quot; value=&amp;quot;10&amp;quot; /&amp;gt; = &amp;lt;output name=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/output&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;progress&amp;gt;显示一项任务的完成进度 &amp;lt;progress value=&amp;quot;388&amp;quot; max=&amp;quot;666&amp;quot;&amp;gt;388&amp;lt;/progress&amp;gt; 388谷歌上样式显示还不错，IE10支持
+Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurrentPosition, clearWatch, watchPosition} </description>
     </item>
     
   </channel>

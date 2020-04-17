@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://lisite.github.io/</loc>
+    <lastmod>2018-11-22T15:14:45+08:00</lastmod>
+  </url>
   
   <url>
     <loc>https://lisite.github.io/pages/svg/</loc>
@@ -123,30 +128,23 @@
   </url>
   
   <url>
-    <loc>https://lisite.github.io/categories/</loc>
-    <lastmod>2018-07-31T21:28:43-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://lisite.github.io/svg/animate/</loc>
   </url>
   
   <url>
     <loc>https://lisite.github.io/categories/</loc>
-    <lastmod>2018-07-31T21:28:43-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://lisite.github.io/</loc>
-    <lastmod>2018-11-22T15:14:45+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://lisite.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lisite.github.io/stories/just-do-it/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/svg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lisite.github.io/tags/</loc>
   </url>
   
 </urlset>

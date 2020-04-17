@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Study hard, day day up!">
 	<meta name="author" content="大西瓜">
-	<meta name="generator" content="Hugo 0.47.1" />
+	<meta name="generator" content="Hugo 0.66.0" />
 	<title>大西瓜🍉</title>
 	<!-- Stylesheets -->
 	
@@ -88,36 +88,26 @@
                             
                                 <span class="image main"><img src="/img/vue.png" alt="" /></span>
                             
-                            
-
-<h3 id="vue在生产环境打包时会出现页面空白的问题">vue在生产环境打包时会出现页面空白的问题</h3>
-
+                            <h3 id="vue在生产环境打包时会出现页面空白的问题">vue在生产环境打包时会出现页面空白的问题</h3>
 <p>1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径</p>
-
 <pre><code>
 assetsPublicPath: '/' =&gt; assetsPublicPath: './' 
 
-</code></pre>
-
-<p>2、确认不是资源路径的问题以后再看history的配置问题</p>
-
+</code></pre><p>2、确认不是资源路径的问题以后再看history的配置问题</p>
 <p>正式环境打包时，在路由中使用了<code>mode = history</code>的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可</p>
-
 <p>如果需要设置网址无#，则需要改以下两个地方：</p>
-
-<pre><code class="language-javascript">export default new Router({
-  mode: 'history',
-  base: '/', //  1、子路径需要加上去
-  routes: [
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Router</span>({
+  <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;history&#39;</span>,
+  <span style="color:#a6e22e">base</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#75715e">//  1、子路径需要加上去
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">routes</span><span style="color:#f92672">:</span> [
     {
-      path:'/acount',
-      name:'account',  //  2、name需要加上去
-      component: account
+      <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;/acount&#39;</span>,
+      <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;account&#39;</span>,  <span style="color:#75715e">//  2、name需要加上去
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">component</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">account</span>
     }
   ]
 })
-</code></pre>
-
+</code></pre></div>
                         </div>
                     </section>
             <!-- Disqus Inject -->
