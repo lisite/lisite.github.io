@@ -6,17 +6,34 @@
     <description>Recent content on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Nov 2018 15:14:45 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 10:42:45 +0000</lastBuildDate>
     
 	<atom:link href="https://lisite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>替换brew为国内的源</title>
+      <link>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</link>
+      <pubDate>Sat, 18 Apr 2020 10:42:45 +0000</pubDate>
+      
+      <guid>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</guid>
+      <description>替换brew.git $ cd &amp;ldquo;$(brew &amp;ndash;repo)&amp;rdquo;
+中国科大(brew.git) $ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+清华大学(brew.git) $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+替换homebrew-core.git $ cd &amp;ldquo;$(brew &amp;ndash;repo)/Library/Taps/homebrew/homebrew-core&amp;rdquo;
+中国科大(homebrew-core.git) $ git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+清华大学(homebrew-core.git) $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+替换homebrew-bottles 中国科大(homebrew-bottles) $ echo &amp;lsquo;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles&amp;rsquo; &amp;raquo; ~/.bash_profile $ source ~/.bash_profile
+清华大学(homebrew-bottles) $ echo &amp;lsquo;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&amp;rsquo; &amp;raquo; ~/.bash_profile $ source ~/.bash_profile
+应用生效 $ brew update</description>
+    </item>
+    
+    <item>
       <title>Svg</title>
-      <link>https://lisite.github.io/pages/svg/</link>
+      <link>https://lisite.github.io/svg/svg/</link>
       <pubDate>Thu, 22 Nov 2018 15:14:45 +0800</pubDate>
       
-      <guid>https://lisite.github.io/pages/svg/</guid>
+      <guid>https://lisite.github.io/svg/svg/</guid>
       <description>这是一个用 img 标签引用的 svg 图片 点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;#34;/img/arrow.svg&amp;#34; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;#34;image/svg+xml&amp;#34; data=&amp;#34;/img/arrow.svg&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34; &amp;gt; &amp;lt;div role=&amp;#34;img&amp;#34; class=&amp;#34;shapes-fallback&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt; firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
     </item>
     

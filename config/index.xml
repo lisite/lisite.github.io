@@ -12,6 +12,23 @@
     
     
     <item>
+      <title>替换brew为国内的源</title>
+      <link>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</link>
+      <pubDate>Sat, 18 Apr 2020 10:42:45 +0000</pubDate>
+      
+      <guid>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</guid>
+      <description>替换brew.git $ cd &amp;ldquo;$(brew &amp;ndash;repo)&amp;rdquo;
+中国科大(brew.git) $ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+清华大学(brew.git) $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+替换homebrew-core.git $ cd &amp;ldquo;$(brew &amp;ndash;repo)/Library/Taps/homebrew/homebrew-core&amp;rdquo;
+中国科大(homebrew-core.git) $ git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+清华大学(homebrew-core.git) $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+替换homebrew-bottles 中国科大(homebrew-bottles) $ echo &amp;lsquo;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles&amp;rsquo; &amp;raquo; ~/.bash_profile $ source ~/.bash_profile
+清华大学(homebrew-bottles) $ echo &amp;lsquo;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&amp;rsquo; &amp;raquo; ~/.bash_profile $ source ~/.bash_profile
+应用生效 $ brew update</description>
+    </item>
+    
+    <item>
       <title>Git工作流</title>
       <link>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Wed, 31 Oct 2018 09:42:45 +0800</pubDate>

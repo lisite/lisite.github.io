@@ -1,5 +1,6 @@
+<!DOCTYPE HTML>
 <html>
-<!-- Header -->
+
     <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +32,12 @@
 	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
 	<![endif]-->
 </head>
-
     <body>
 
     <!-- Wrapper -->
         <div id="wrapper">
 
-        <!-- Header -->
+            <!-- Header -->
     <header id="header" class="alt">
         <a href="https://lisite.github.io/" class="logo"><strong>大西瓜</strong> <span>🍉 👶</span></a>
         <nav>
@@ -78,65 +78,47 @@
     </nav>
 
         <!-- Main -->
-            <div id="main">
+            <div id="main" class="alt">
 
-                <section id="banner" class="style2">
-                    <div class="inner" data-tilt>
-			
-                        <header class="major">
-                            <h1>Pages</h1>
-                        </header>
-                        <div class="content">
-                            <p>页面展示相关</p>
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>替换brew为国内的源</h1>
+                                <span>2020-04-18 10:42:45 &#43;0000 UTC</span>
+                            </header>
+                            
+                            <h3 id="替换brewgit">替换brew.git</h3>
+<p>$ cd &ldquo;$(brew &ndash;repo)&rdquo;</p>
+<h3 id="中国科大brewgit">中国科大(brew.git)</h3>
+<p>$ git remote set-url origin <a href="https://mirrors.ustc.edu.cn/brew.git">https://mirrors.ustc.edu.cn/brew.git</a></p>
+<h3 id="清华大学brewgit">清华大学(brew.git)</h3>
+<p>$ git remote set-url origin <a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</a></p>
+<h3 id="替换homebrew-coregit">替换homebrew-core.git</h3>
+<p>$ cd &ldquo;$(brew &ndash;repo)/Library/Taps/homebrew/homebrew-core&rdquo;</p>
+<h3 id="中国科大homebrew-coregit">中国科大(homebrew-core.git)</h3>
+<p>$ git remote set-url origin <a href="https://mirrors.ustc.edu.cn/homebrew-core.git">https://mirrors.ustc.edu.cn/homebrew-core.git</a></p>
+<h3 id="清华大学homebrew-coregit">清华大学(homebrew-core.git)</h3>
+<p>$ git remote set-url origin <a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</a></p>
+<h3 id="替换homebrew-bottles">替换homebrew-bottles</h3>
+<h3 id="中国科大homebrew-bottles">中国科大(homebrew-bottles)</h3>
+<p>$ echo &lsquo;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles&rsquo; &raquo; ~/.bash_profile
+$ source ~/.bash_profile</p>
+<h3 id="清华大学homebrew-bottles">清华大学(homebrew-bottles)</h3>
+<p>$ echo &lsquo;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&rsquo; &raquo; ~/.bash_profile
+$ source ~/.bash_profile</p>
+<h3 id="应用生效">应用生效</h3>
+<p>$ brew update</p>
 
-                        </div>
-                    </div>
-                </section>
-
-                <section id="two" class="spotlights">
-                    
-                    <section data-tilt style="min-height: 18em">
-                        <a href="/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/" class="image">
-                            
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3>小程序image标签模式</h3>
-                                </header>
-                                <p>缩放 和 剪裁</p>
-                                <ul class="actions">
-                                    <li><a href="/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section data-tilt style="min-height: 18em">
-                        <a href="/pages/pages/" class="image">
-                            
-                                <img src="/img/HTML5_sticker.svg" alt="" data-position="center center" />
-                            
-						</a>
-                        <div class="content">
-                            <div class="inner">
-                                <header class="major">
-                                    <h3>HTML5 API</h3>
-                                </header>
-                                <p>HTML5 持续让前端发挥更大的可能</p>
-                                <ul class="actions">
-                                    <li><a href="/pages/pages/" class="button">Learn more</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </section>
-                    
-                </section>
+            <!-- Disqus Inject -->
+                
             </div>
             
         <!-- Footer -->
-			
-				<!-- Footer -->
+            
+                <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -162,7 +144,6 @@
     </footer>
 
             
-        
         </div>
 
     <!-- Scripts -->
@@ -184,6 +165,6 @@
     
 
     
-        
+
     </body>
 </html>
