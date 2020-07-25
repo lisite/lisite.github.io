@@ -2,21 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forty</title>
-    <link>https://lisite.github.io/</link>
+    <link>/</link>
     <description>Recent content on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 10:42:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 08:26:13 -0500</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>node如何更好的使用数据库</title>
+      <link>/node/tempus/</link>
+      <pubDate>Fri, 22 May 2020 08:26:13 -0500</pubDate>
+      
+      <guid>/node/tempus/</guid>
+      <description>与数据库交互有两种方法  使用数据库的原生查询语言（例如SQL） 使用对象数据模型（Object Data Model，简称 ODM）或对象关系模型（Object Relational Model，简称 ORM）。 ODM / ORM 能将网站中的数据表示为 JavaScript 对象，然后将它们映射到底层数据库。一些 ORM 只适用某些特定数据库，还有一些是普遍适用的。 使用 SQL 或其它受到支持的查询语言才能达到最佳性能。ODM 通常慢一些，因为在对象和数据库格式之间存在一层用于映射的翻译代码，使它不一定会选用最高性能的数据库查询（尤其是普遍使用级别的 ODM，它必须在各类数据库功能方面做出更大的折衷）。   使用 ORM 的好处是：程序员可以继续用 JavaScript 对象的思维而不用转向数据库语义的思维。 在（同一个或不同网站）使用不同数据库时尤为明显。使用 ORM 还可以更方便地对数据进行验证和检查
+ ODM有很多 如何选择 NPM 站点上有许多 ODM / ORM 解决方案（另请参阅 NPM 站点上的 odm 和 orm 标签列表) 以下是迄今几种流行的解决方案  Mongoose：一款为异步工作环境设计的 MongoDB 对象建模工具。 Waterline：从基于Express 的 Sails 框架中提取的 ORM。它提供了一套统一的 API 来访问众多不同的数据库，其中包括 Redis，mySQL，LDAP，MongoDB 和 Postgres。 Bookshelf：同时提供基于 promise 和传统回调两套接口，支持事务处理、渴求式/嵌套渴求式关系加载、多态关联，以及对一对一，一对多和多对多关系。支持 PostgreSQL、MySQL 和 SQLite3。 Objection：以尽可能简单的方式使用 SQL 和底层数据库引擎的全部功能（支持SQLite3、Postgres 和 MySQL）。 Sequelize：基于 promise 的 Node.</description>
+    </item>
+    
+    <item>
+      <title>mac 下使用 rz 命令</title>
+      <link>/config/mac-%E4%B8%8B%E4%BD%BF%E7%94%A8-rz-%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 19 Apr 2020 10:07:59 +0000</pubDate>
+      
+      <guid>/config/mac-%E4%B8%8B%E4%BD%BF%E7%94%A8-rz-%E5%91%BD%E4%BB%A4/</guid>
+      <description>rz和sz在MAC上的使用优化方案  iTerm每次使用rz都会卡住
+ 一、下载iTerm2 二、下载安装lrzsz # 或者 brew install lrzsz sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 三、下载并安装automatic zmoderm for iTerm2 # 如果有wget报错, 则需要暗转wget (brew install wget) cd /usr/local/bin sudo wget https://github.com/supermason/iterm2-zmodem/blob/master/iterm2-recv-zmodem.sh sudo wget https://github.com/supermason/iterm2-zmodem/blob/master/iterm2-send-zmodem.sh udo chmod 777 /usr/local/bin/iterm2-* 四、添加配置 iTerm2 &amp;ndash;&amp;gt; Profiles &amp;ndash;&amp;gt; Open Profiles &amp;ndash;&amp;gt; Edit Profiles &amp;ndash;&amp;gt; Advanced（如下图的Advanced） &amp;ndash;&amp;gt; Edit Trigger
+然后使用如下配置: | Regular expression | Action | Action | | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | | **B0100 | Run Silent Coprocess | /usr/local/bin/iterm2-send-zmodem.</description>
+    </item>
+    
+    <item>
       <title>替换brew为国内的源</title>
-      <link>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</link>
+      <link>/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</link>
       <pubDate>Sat, 18 Apr 2020 10:42:45 +0000</pubDate>
       
-      <guid>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</guid>
+      <guid>/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</guid>
       <description>替换brew.git $ cd &amp;ldquo;$(brew &amp;ndash;repo)&amp;rdquo;
 中国科大(brew.git) $ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
 清华大学(brew.git) $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
@@ -30,19 +51,19 @@
     
     <item>
       <title>Svg</title>
-      <link>https://lisite.github.io/svg/svg/</link>
+      <link>/svg/svg/</link>
       <pubDate>Thu, 22 Nov 2018 15:14:45 +0800</pubDate>
       
-      <guid>https://lisite.github.io/svg/svg/</guid>
+      <guid>/svg/svg/</guid>
       <description>这是一个用 img 标签引用的 svg 图片 点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;#34;/img/arrow.svg&amp;#34; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;#34;image/svg+xml&amp;#34; data=&amp;#34;/img/arrow.svg&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34; &amp;gt; &amp;lt;div role=&amp;#34;img&amp;#34; class=&amp;#34;shapes-fallback&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt; firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
     </item>
     
     <item>
       <title>小程序image标签模式</title>
-      <link>https://lisite.github.io/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</link>
+      <link>/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Sat, 17 Nov 2018 12:46:47 +0800</pubDate>
       
-      <guid>https://lisite.github.io/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</guid>
       <description>image组件默认宽度300px、高度225px 注2：image组件中二维码/小程序码图片不支持长按识别。仅在wx.previewImage中支持长按识别。
 mode 有效值：
 mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
@@ -52,10 +73,10 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
     
     <item>
       <title>Git工作流</title>
-      <link>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+      <link>/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Wed, 31 Oct 2018 09:42:45 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <guid>/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
       <description>Git 工作流 通常 Git 的工作流程，采用的是功能驱动式开发。先有需求，再有功能分支或补丁分支。完成开发后，该分支就合并到主分支，然后删除分支。
 广泛使用的工作流程有三种：
  Git flow Github flow Gitlab flow  Git flow 需要同时维护两个非常相似的分支 develop 和 master，比较适合具有较长版本发布周期的项目。 Github flow 只需要维护一个分支，根据新需求从 master 拉取新分支，合并上线后，再删除新分支。 Gitlab flow 在 master 分支以外，再建立不同的环境分支，通过不同环境的上下游关系合并新功能。</description>
@@ -63,47 +84,47 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
     
     <item>
       <title>单例模式</title>
-      <link>https://lisite.github.io/js/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <link>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Tue, 30 Oct 2018 21:10:35 +0800</pubDate>
       
-      <guid>https://lisite.github.io/js/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
       <description>设计模式之单例模式 单例模式是只能初始化一次的实例对象，早期的JQuery就使用单例模式，为了防止全局作用域下的方法和属性相互影响，将相关的属性和方法都放在一个命名空间中加以区分，如小红的命名空间为var hong = {}，小米的命名空间为var mi = {}，如果你想整个项目只用一个对象，单例模式将是最好的选择
 详细介绍单例模式 1、作为一个小的代码库 var Cool = { Utils: { formatDate: function(){}, cookie: { getCookie(){}, setCookie(){} } }, Tools: { tools_A: {}, tools_B: {} }, Axios:{ get: {}, post: {} }, Others: { ... } ... } 2、单例模式用作静态变量的获取  在js中并没有静态变量，按照常理来说，任何类型的变量都是可以被改变的，但是js的语言多变性可以通过单例模式实现，以下模拟配置文件的取值，保护配置文件不可更改 静态变量，按照管惯例为大写  var Conf = (function(){ var statics = { COUNT: 1, TITLE: &amp;#39;fire&amp;#39;, COLOR: &amp;#39;red&amp;#39; } return { get: function(name){ return statics[name] ? statics[name] : null } } })() </description>
     </item>
     
     <item>
       <title>Webpack配置详解</title>
-      <link>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
+      <link>/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 15 Oct 2018 11:58:35 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
       <description>1、webpack 4.0.0 新版本下分割代码块配置，细粒度更高 optimization: { splitChunks: { chunks: &amp;#34;initial&amp;#34;, // 必须三选一： &amp;#34;initial&amp;#34; | &amp;#34;all&amp;#34;(默认就是all) | &amp;#34;async&amp;#34; minSize: 0, // 最小尺寸，默认0 minChunks: 1, // 最小 chunk ，默认1 maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 name: function(){}, // 名称，此选项可接收 function cacheGroups:{ // 这里开始设置缓存的 chunks priority: 0, // 缓存组优先级 vendor: { // key 为entry中定义的 入口名称 chunks: &amp;#34;initial&amp;#34;, // 必须三选一： &amp;#34;initial&amp;#34; | &amp;#34;all&amp;#34; | &amp;#34;async&amp;#34;(默认就是异步) test: /react|lodash/, // 正则规则验证，如果符合就提取 chunk name: &amp;#34;vendor&amp;#34;, // 要缓存的 分隔出来的 chunk 名称 minSize: 0, minChunks: 1, enforce: true, maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 reuseExistingChunk: true // 可设置是否重用该chunk（查看源码没有发现默认值） } } } } </description>
     </item>
     
     <item>
       <title>Koajs</title>
-      <link>https://lisite.github.io/js/koajs/</link>
+      <link>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/koajs/</link>
       <pubDate>Fri, 12 Oct 2018 16:13:23 +0800</pubDate>
       
-      <guid>https://lisite.github.io/js/koajs/</guid>
+      <guid>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/koajs/</guid>
       <description>Koa use module note  http-error http-assert cookies [koa-art-template]((https://github.com/koa-art-template)  </description>
     </item>
     
     <item>
       <title>Git命令珍藏</title>
-      <link>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
+      <link>/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
       <pubDate>Wed, 10 Oct 2018 17:07:59 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
+      <guid>/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
       <description>以下是本人收藏的一些git并不常用到的命令 # 临时的保存 git stash # 暂存 git stash list # 暂存的列表 git stash pop # 取回更改 git stash save &amp;#34;this is the tempory save&amp;#34; # 给暂存添加描述 git stash clear # 删除暂存的提交 git stash save --keep-index # 只暂存没有被暂存的文件 # 清晰直观的查看commits git log --graph --pretty=one --abbrev-commit # merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失 git merge --no-ff -m &amp;#34;merge with no-ff&amp;#34; dev # 查找事故责任人，在vscode中可以使用gitlens插件，达到追踪责任人的问题 git blame # 每隔X秒运行一次git pull screen for((i=1;i&amp;lt;=10000;i+=1)); do sleep X &amp;amp;&amp;amp; git pull; done # 忽略追踪文件中的变更 git update-index --assume-unchanged # 将远程提交合并到自己的分支中 # 也可以使用git cherry-pick 来选择给定SHA值的提交，然后将其合并到当前分支中 git cherry-pick SHA-commit # 应用来自于不相关的本地仓库的补丁（暂时没遇到此类需求，留着备用） # 场景：将另一个不相关的本地仓库的提交补丁应用到当前仓库 git --git-dir=/.</description>
     </item>
     
     <item>
       <title>前端nginx配置</title>
-      <link>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</link>
+      <link>/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 19 Sep 2018 22:16:52 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</guid>
+      <guid>/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</guid>
       <description>参考文章：
 http://blog.51cto.com/leeyan/1865448
 https://juejin.im/entry/5abaf4986fb9a028c42e3c46
@@ -119,20 +140,20 @@ spa应用服务器部署：
     
     <item>
       <title>Vim分屏</title>
-      <link>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</link>
+      <link>/config/vim%E5%88%86%E5%B1%8F/</link>
       <pubDate>Sat, 01 Sep 2018 10:29:01 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</guid>
+      <guid>/config/vim%E5%88%86%E5%B1%8F/</guid>
       <description>使用vim分屏可以提高操作效率，也可以用来装*
  一、分屏操作 1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件) $ vim -on react.js vue.js... // 横向 $ vim -On react.js vue.js... // 纵向 2、新建文件并分屏，Ctrl+W n (new) 二、关闭分屏 1、快捷键可使用ctrl+W c，命令行如下： $ :only // 取消光标所在的屏 2、快捷键其他窗口ctrl+w o (other) 三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右 四、载入文件 1、在新的垂直分屏中打开文件 $ :vs 2、在新的水平分屏中打开文件 $ :sv </description>
     </item>
     
     <item>
       <title>Vue在生产环境打包出现一片空白的问题</title>
-      <link>https://lisite.github.io/vue/vue/</link>
+      <link>/vue/vue/</link>
       <pubDate>Thu, 23 Aug 2018 15:30:26 +0000</pubDate>
       
-      <guid>https://lisite.github.io/vue/vue/</guid>
+      <guid>/vue/vue/</guid>
       <description>vue在生产环境打包时会出现页面空白的问题 1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径
  assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39; 2、确认不是资源路径的问题以后再看history的配置问题
 正式环境打包时，在路由中使用了mode = history的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可
@@ -142,20 +163,20 @@ export default new Router({ mode: &amp;#39;history&amp;#39;, base: &amp;#39;/&am
     
     <item>
       <title>继承</title>
-      <link>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</link>
+      <link>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</link>
       <pubDate>Thu, 16 Aug 2018 08:31:58 +0800</pubDate>
       
-      <guid>https://lisite.github.io/js/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
+      <guid>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/%E8%B0%88%E8%B0%88js%E4%B8%AD%E7%9A%84%E5%90%84%E5%BC%8F%E7%BB%A7%E6%89%BF/</guid>
       <description>对象A继承对象B的属性和方法，也可能继承对象B的原型对象的属性和方法，或者两者兼而有之，可以使用instanceof来判断某个对象是否继承了某个类
  1、类继承 // 类式继承，将父类的实例赋给子类的原型 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showName = function(){ console.log(name); } function SubClass(){ this.age = 20; } SubClass.prototype = new SuperClass(); 原理：通过原型链，实例化父类以后，新创建的对象复制了父类构造函数中的属性和方法，同时新建对象的_proto_指向父类的原型对象，然后将新建的对象赋值给子类的原型，从而让子类继承父类的原型属性和方法，同时继承父类构造函数中的属性和方法。 优点：子类的实例拥有父类的所有属性和方法（构造函数中和原型对象中） 缺点：1、如果父类构造函数中的值为引用类型，则子类的实例会同时指向这个值 2、实例化父类的时候无法对父类的构造函数内的属性进行初始化 2、构造函数继承 通过call方法改变子类的作用域，即通过改变this指向来继承父类构造函数中的属性和方法 function SuperClass(name){ this.name = name; this.books = [&#39;java&#39;, &#39;javascript&#39;, &#39;english&#39;] } // 为父类添加原型方法 SuperClass.prototype.showBooks = function(){ console.log(books); } function SubClass(age){ this.age = 20; SuperClass.call(this, age); } 原理：通过call方法（可以改变函数的作用域）将子类的的变量在父类中执行一遍，由于父类中是给this绑定属性的，因此子类继承了父类的共有属性 优点：每个实例单独的拥有父类的属性和方法，这样的方式不会像类式继承，子类的所有实例都会指向同一个引用类型的属性 缺点：无法继承父类原型属性和方法，违背了代码复用的原则 3.混合继承 // 同时使用👆，1和2 的继承方式进行组合 function SuperClass(name){ this.</description>
     </item>
     
     <item>
       <title>es5 和 es6 的this指向</title>
-      <link>https://lisite.github.io/js/this/</link>
+      <link>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/this/</link>
       <pubDate>Tue, 31 Jul 2018 21:28:43 -0500</pubDate>
       
-      <guid>https://lisite.github.io/js/this/</guid>
+      <guid>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/this/</guid>
       <description>this在前端开发中使用非常广泛，它的指向问题也一直被人提及，this也是前端同胞们在面试时被问到最多的问题之一，因为它和男人一样，不止一面&amp;hellip;
 es5中的this 1、全局函数，函数中的this指向window，非严格模式下(this === window)，严格模式下为undifined。
  var x = 1; function father() { console.log(window.x); (function son() {console.log(this.x)})(); } father(); // 结果为 1 2、函数作为对象的方法调用时，this指向这个上级对象。
@@ -165,10 +186,10 @@ es5中的this 1、全局函数，函数中的this指向window，非严格模式�
     
     <item>
       <title>HTML5 API</title>
-      <link>https://lisite.github.io/pages/pages/</link>
+      <link>/pages/pages/</link>
       <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
       
-      <guid>https://lisite.github.io/pages/pages/</guid>
+      <guid>/pages/pages/</guid>
       <description>html51、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
  &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt; 建议在移动端测试一下
 2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签
@@ -178,10 +199,10 @@ Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurr
     
     <item>
       <title>原型对象</title>
-      <link>https://lisite.github.io/js/magna/</link>
+      <link>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/magna/</link>
       <pubDate>Wed, 11 Apr 2018 22:26:09 -0500</pubDate>
       
-      <guid>https://lisite.github.io/js/magna/</guid>
+      <guid>/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%AD%82-javascript/magna/</guid>
       <description>1、万物皆对象
 2、所有对象的隐式原型指向他的构造函数（父类）的显示原型
 3、基于第二点的关系，会形成一个链状结构
@@ -191,10 +212,10 @@ Geolocation&amp;ndash;BOM新API window.navigator.geoloaction =&amp;gt; { getCurr
     
     <item>
       <title>{react, redux} 🆚 {vue, vueX}</title>
-      <link>https://lisite.github.io/react/tempus/</link>
+      <link>/react/tempus/</link>
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
       
-      <guid>https://lisite.github.io/react/tempus/</guid>
+      <guid>/react/tempus/</guid>
       <description>关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
  优点：
 1、它让你在编写代码的时候同时也在思考你的应用。
@@ -208,10 +229,10 @@ Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =
     
     <item>
       <title>使用命令行在终端中高效搜索</title>
-      <link>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</link>
+      <link>/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</link>
       <pubDate>Tue, 26 Dec 2017 10:04:26 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</guid>
+      <guid>/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</guid>
       <description>Mac可以使用自带的Spotlight工具进行搜索，control + space可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢
 1、find命令行 // 在用户文件夹中搜索名字中包含vue的文件 find ~ -iname &amp;quot;*vue*&amp;quot; // 在指定的目录中寻找特定的文件 find ~/node_modules -iname &amp;quot;assert&amp;quot; // 在指定的目录中寻找特定的文件，并将搜索结果导出到桌面上（或者其他的目录） find ~/node_modules -iname &amp;quot;*babel-loader*&amp;quot; &amp;gt; Desktop/result.txt 2、mdfind命令 mdfind命令就是spotlight的终端界面
 // 搜索名字中包含vue的文件 mdfind -name &amp;quot;vue&amp;quot; // 搜索内容中包含requre(&#39;vue-router&#39;)的文件 mdfind &amp;quot;require(&#39;vue-router&#39;)&amp;quot; // 在指定文件夹中搜索指定类型（png）的文件 mdfind -onlyin ~/Documents png // 搜索并将结果导出到文件 mdfind -onlyin ~/Documents png &amp;gt; Desktop/result.txt </description>
@@ -219,10 +240,10 @@ Reactjs组件生命周期： 初始化:组件状态，获取父组件传的值 =
     
     <item>
       <title>微信的历史</title>
-      <link>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</link>
+      <link>/stories/%E5%BE%AE%E4%BF%A1/</link>
       <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
       
-      <guid>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</guid>
+      <guid>/stories/%E5%BE%AE%E4%BF%A1/</guid>
       <description>2010年6月，苹果发布 iPhone 4。当年中国的智能手机销量是3610万部，2011年就猛增到9060万部，2012年更是飙升到2.142亿部。很显然，手机软件（尤其是即时通信软件）即将爆发。
 2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;quot;微信&amp;rdquo;。
 2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;ldquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;ldquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
@@ -249,20 +270,20 @@ The end</description>
     
     <item>
       <title>Animate</title>
-      <link>https://lisite.github.io/svg/animate/</link>
+      <link>/svg/animate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/svg/animate/</guid>
+      <guid>/svg/animate/</guid>
       <description>example:
 &amp;lt;svg width=&amp;#34;200&amp;#34; height=&amp;#34;200&amp;#34; x=&amp;#34;0&amp;#34; y=&amp;#34;0&amp;#34; viewBox=&amp;#34;0 0 200 200&amp;#34; &amp;gt; &amp;lt;g stroke=&amp;#34;#ffffff&amp;#34; fill=&amp;#34;none&amp;#34; stroke-width=&amp;#34;4&amp;#34;&amp;gt; &amp;lt;circle cx=&amp;#34;100&amp;#34; cy=&amp;#34;100&amp;#34; r=&amp;#34;10&amp;#34; stroke-opacity=&amp;#34;0&amp;#34;&amp;gt; &amp;lt;animate attributeName=&amp;#34;r&amp;#34; begin=&amp;#34;0s&amp;#34; dur=&amp;#34;1.8s&amp;#34; values=&amp;#34;1; 20&amp;#34; calcMode=&amp;#34;spline&amp;#34; keyTimes=&amp;#34;0; 1&amp;#34; keySplines=&amp;#34;0.165, 0.84, 0.44, 1&amp;#34; repeatCount=&amp;#34;indefinite&amp;#34;/&amp;gt; &amp;lt;animate attributeName=&amp;#34;stroke-opacity&amp;#34; begin=&amp;#34;0s&amp;#34; dur=&amp;#34;1.8s&amp;#34; values=&amp;#34;1; 0&amp;#34; calcMode=&amp;#34;spline&amp;#34; keyTimes=&amp;#34;0; 1&amp;#34; keySplines=&amp;#34;0.3, 0.61, 0.355, 1&amp;#34; repeatCount=&amp;#34;indefinite&amp;#34;/&amp;gt; &amp;lt;/circle&amp;gt; &amp;lt;circle cx=&amp;#34;100&amp;#34; cy=&amp;#34;100&amp;#34; r=&amp;#34;10&amp;#34; stroke-opacity=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/circle&amp;gt; &amp;lt;/g&amp;gt; &amp;lt;/svg&amp;gt;   attributeName: I guess this is about which attribute you want to animate.</description>
     </item>
     
     <item>
       <title>just do it</title>
-      <link>https://lisite.github.io/stories/just-do-it/</link>
+      <link>/stories/just-do-it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/stories/just-do-it/</guid>
+      <guid>/stories/just-do-it/</guid>
       <description>Time goes on. So whatever you’re going to do, do it. Do it now. Don’t wait.</description>
     </item>
     

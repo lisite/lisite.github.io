@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue on Forty</title>
-    <link>https://lisite.github.io/vue/</link>
+    <link>/vue/</link>
     <description>Recent content in Vue on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Sep 2018 21:50:35 +0800</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/vue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vue在生产环境打包出现一片空白的问题</title>
-      <link>https://lisite.github.io/vue/vue/</link>
+      <link>/vue/vue/</link>
       <pubDate>Thu, 23 Aug 2018 15:30:26 +0000</pubDate>
       
-      <guid>https://lisite.github.io/vue/vue/</guid>
+      <guid>/vue/vue/</guid>
       <description>vue在生产环境打包时会出现页面空白的问题 1、首先先确定是不是路径的问题，如果找不到css文件和js文件，那么要修改config下面的index.js中bulid模块导出的路径
  assetsPublicPath: &#39;/&#39; =&amp;gt; assetsPublicPath: &#39;./&#39; 2、确认不是资源路径的问题以后再看history的配置问题
 正式环境打包时，在路由中使用了mode = history的配置，会导致资源加载都ok的情况下页面空白，解决办法：打包前去掉mode的配置即可

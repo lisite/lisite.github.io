@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Config on Forty</title>
-    <link>https://lisite.github.io/config/</link>
+    <link>/config/</link>
     <description>Recent content in Config on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Sep 2018 21:49:39 +0800</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/config/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/config/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>mac 下使用 rz 命令</title>
+      <link>/config/mac-%E4%B8%8B%E4%BD%BF%E7%94%A8-rz-%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 19 Apr 2020 10:07:59 +0000</pubDate>
+      
+      <guid>/config/mac-%E4%B8%8B%E4%BD%BF%E7%94%A8-rz-%E5%91%BD%E4%BB%A4/</guid>
+      <description>rz和sz在MAC上的使用优化方案  iTerm每次使用rz都会卡住
+ 一、下载iTerm2 二、下载安装lrzsz # 或者 brew install lrzsz sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 三、下载并安装automatic zmoderm for iTerm2 # 如果有wget报错, 则需要暗转wget (brew install wget) cd /usr/local/bin sudo wget https://github.com/supermason/iterm2-zmodem/blob/master/iterm2-recv-zmodem.sh sudo wget https://github.com/supermason/iterm2-zmodem/blob/master/iterm2-send-zmodem.sh udo chmod 777 /usr/local/bin/iterm2-* 四、添加配置 iTerm2 &amp;ndash;&amp;gt; Profiles &amp;ndash;&amp;gt; Open Profiles &amp;ndash;&amp;gt; Edit Profiles &amp;ndash;&amp;gt; Advanced（如下图的Advanced） &amp;ndash;&amp;gt; Edit Trigger
+然后使用如下配置: | Regular expression | Action | Action | | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash; | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | | **B0100 | Run Silent Coprocess | /usr/local/bin/iterm2-send-zmodem.</description>
+    </item>
+    
+    <item>
       <title>替换brew为国内的源</title>
-      <link>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</link>
+      <link>/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</link>
       <pubDate>Sat, 18 Apr 2020 10:42:45 +0000</pubDate>
       
-      <guid>https://lisite.github.io/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</guid>
+      <guid>/config/brew%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E6%85%A2/</guid>
       <description>替换brew.git $ cd &amp;ldquo;$(brew &amp;ndash;repo)&amp;rdquo;
 中国科大(brew.git) $ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
 清华大学(brew.git) $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
@@ -30,10 +41,10 @@
     
     <item>
       <title>Git工作流</title>
-      <link>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+      <link>/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Wed, 31 Oct 2018 09:42:45 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
+      <guid>/config/git%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid>
       <description>Git 工作流 通常 Git 的工作流程，采用的是功能驱动式开发。先有需求，再有功能分支或补丁分支。完成开发后，该分支就合并到主分支，然后删除分支。
 广泛使用的工作流程有三种：
  Git flow Github flow Gitlab flow  Git flow 需要同时维护两个非常相似的分支 develop 和 master，比较适合具有较长版本发布周期的项目。 Github flow 只需要维护一个分支，根据新需求从 master 拉取新分支，合并上线后，再删除新分支。 Gitlab flow 在 master 分支以外，再建立不同的环境分支，通过不同环境的上下游关系合并新功能。</description>
@@ -41,28 +52,28 @@
     
     <item>
       <title>Webpack配置详解</title>
-      <link>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
+      <link>/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 15 Oct 2018 11:58:35 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>/config/webpack%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</guid>
       <description>1、webpack 4.0.0 新版本下分割代码块配置，细粒度更高 optimization: { splitChunks: { chunks: &amp;#34;initial&amp;#34;, // 必须三选一： &amp;#34;initial&amp;#34; | &amp;#34;all&amp;#34;(默认就是all) | &amp;#34;async&amp;#34; minSize: 0, // 最小尺寸，默认0 minChunks: 1, // 最小 chunk ，默认1 maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 name: function(){}, // 名称，此选项可接收 function cacheGroups:{ // 这里开始设置缓存的 chunks priority: 0, // 缓存组优先级 vendor: { // key 为entry中定义的 入口名称 chunks: &amp;#34;initial&amp;#34;, // 必须三选一： &amp;#34;initial&amp;#34; | &amp;#34;all&amp;#34; | &amp;#34;async&amp;#34;(默认就是异步) test: /react|lodash/, // 正则规则验证，如果符合就提取 chunk name: &amp;#34;vendor&amp;#34;, // 要缓存的 分隔出来的 chunk 名称 minSize: 0, minChunks: 1, enforce: true, maxAsyncRequests: 1, // 最大异步请求数， 默认1 maxInitialRequests : 1, // 最大初始化请求书，默认1 reuseExistingChunk: true // 可设置是否重用该chunk（查看源码没有发现默认值） } } } } </description>
     </item>
     
     <item>
       <title>Git命令珍藏</title>
-      <link>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
+      <link>/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</link>
       <pubDate>Wed, 10 Oct 2018 17:07:59 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
+      <guid>/config/git%E5%91%BD%E4%BB%A4%E7%8F%8D%E8%97%8F/</guid>
       <description>以下是本人收藏的一些git并不常用到的命令 # 临时的保存 git stash # 暂存 git stash list # 暂存的列表 git stash pop # 取回更改 git stash save &amp;#34;this is the tempory save&amp;#34; # 给暂存添加描述 git stash clear # 删除暂存的提交 git stash save --keep-index # 只暂存没有被暂存的文件 # 清晰直观的查看commits git log --graph --pretty=one --abbrev-commit # merge的时候不使用fast forward，以保证删除分支后，分支信息不丢失 git merge --no-ff -m &amp;#34;merge with no-ff&amp;#34; dev # 查找事故责任人，在vscode中可以使用gitlens插件，达到追踪责任人的问题 git blame # 每隔X秒运行一次git pull screen for((i=1;i&amp;lt;=10000;i+=1)); do sleep X &amp;amp;&amp;amp; git pull; done # 忽略追踪文件中的变更 git update-index --assume-unchanged # 将远程提交合并到自己的分支中 # 也可以使用git cherry-pick 来选择给定SHA值的提交，然后将其合并到当前分支中 git cherry-pick SHA-commit # 应用来自于不相关的本地仓库的补丁（暂时没遇到此类需求，留着备用） # 场景：将另一个不相关的本地仓库的提交补丁应用到当前仓库 git --git-dir=/.</description>
     </item>
     
     <item>
       <title>前端nginx配置</title>
-      <link>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</link>
+      <link>/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 19 Sep 2018 22:16:52 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</guid>
+      <guid>/config/%E5%89%8D%E7%AB%AFnginx%E9%85%8D%E7%BD%AE/</guid>
       <description>参考文章：
 http://blog.51cto.com/leeyan/1865448
 https://juejin.im/entry/5abaf4986fb9a028c42e3c46
@@ -78,20 +89,20 @@ spa应用服务器部署：
     
     <item>
       <title>Vim分屏</title>
-      <link>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</link>
+      <link>/config/vim%E5%88%86%E5%B1%8F/</link>
       <pubDate>Sat, 01 Sep 2018 10:29:01 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/vim%E5%88%86%E5%B1%8F/</guid>
+      <guid>/config/vim%E5%88%86%E5%B1%8F/</guid>
       <description>使用vim分屏可以提高操作效率，也可以用来装*
  一、分屏操作 1、横/纵向分屏(o/O表示横/纵向分屏，n代表分屏时要打开的文件) $ vim -on react.js vue.js... // 横向 $ vim -On react.js vue.js... // 纵向 2、新建文件并分屏，Ctrl+W n (new) 二、关闭分屏 1、快捷键可使用ctrl+W c，命令行如下： $ :only // 取消光标所在的屏 2、快捷键其他窗口ctrl+w o (other) 三、在分屏中切换光标ctrl+W h,j,k,l/左、下、上、右 四、载入文件 1、在新的垂直分屏中打开文件 $ :vs 2、在新的水平分屏中打开文件 $ :sv </description>
     </item>
     
     <item>
       <title>使用命令行在终端中高效搜索</title>
-      <link>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</link>
+      <link>/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</link>
       <pubDate>Tue, 26 Dec 2017 10:04:26 +0800</pubDate>
       
-      <guid>https://lisite.github.io/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</guid>
+      <guid>/config/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2/</guid>
       <description>Mac可以使用自带的Spotlight工具进行搜索，control + space可以调出系统搜索框，但是如何在终端中更加高效的使用搜索功能呢
 1、find命令行 // 在用户文件夹中搜索名字中包含vue的文件 find ~ -iname &amp;quot;*vue*&amp;quot; // 在指定的目录中寻找特定的文件 find ~/node_modules -iname &amp;quot;assert&amp;quot; // 在指定的目录中寻找特定的文件，并将搜索结果导出到桌面上（或者其他的目录） find ~/node_modules -iname &amp;quot;*babel-loader*&amp;quot; &amp;gt; Desktop/result.txt 2、mdfind命令 mdfind命令就是spotlight的终端界面
 // 搜索名字中包含vue的文件 mdfind -name &amp;quot;vue&amp;quot; // 搜索内容中包含requre(&#39;vue-router&#39;)的文件 mdfind &amp;quot;require(&#39;vue-router&#39;)&amp;quot; // 在指定文件夹中搜索指定类型（png）的文件 mdfind -onlyin ~/Documents png // 搜索并将结果导出到文件 mdfind -onlyin ~/Documents png &amp;gt; Desktop/result.txt </description>

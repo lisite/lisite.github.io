@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stories on Forty</title>
-    <link>https://lisite.github.io/stories/</link>
+    <link>/stories/</link>
     <description>Recent content in Stories on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Sep 2018 21:39:24 +0800</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/stories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/stories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>微信的历史</title>
-      <link>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</link>
+      <link>/stories/%E5%BE%AE%E4%BF%A1/</link>
       <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
       
-      <guid>https://lisite.github.io/stories/%E5%BE%AE%E4%BF%A1/</guid>
+      <guid>/stories/%E5%BE%AE%E4%BF%A1/</guid>
       <description>2010年6月，苹果发布 iPhone 4。当年中国的智能手机销量是3610万部，2011年就猛增到9060万部，2012年更是飙升到2.142亿部。很显然，手机软件（尤其是即时通信软件）即将爆发。
 2010年10月，腾讯广州研发中心开始开发微信。研发负责人是张小龙，当时是 QQ 邮件移动版的负责人。2005年，他的前一个产品 Foxmail 被腾讯收购，他因此加入腾讯。他带领一支不到10人的团队，不到70天的时间内开发出了第一版微信，击败了另外两个内部同类项目。腾讯公司总裁马化腾确定这款产品的名称叫做&amp;quot;微信&amp;rdquo;。
 2011年1月21日，微信正式发布，第一版只允许用户发送文本和照片，不能发送短信。一位用户在苹果公司的 App 商店留言：&amp;ldquo;不能像飞信那样，给其它手机发免费短信，我不知道这种产品有什么意义。&amp;ldquo;但是，飞信（feixin）当时不愿意向非中国移动的用户开放它的短信功能，导致没有能进一步占领市场。
@@ -43,10 +43,10 @@ The end</description>
     
     <item>
       <title>just do it</title>
-      <link>https://lisite.github.io/stories/just-do-it/</link>
+      <link>/stories/just-do-it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/stories/just-do-it/</guid>
+      <guid>/stories/just-do-it/</guid>
       <description>Time goes on. So whatever you’re going to do, do it. Do it now. Don’t wait.</description>
     </item>
     

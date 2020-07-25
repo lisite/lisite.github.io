@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on Forty</title>
-    <link>https://lisite.github.io/react/</link>
+    <link>/react/</link>
     <description>Recent content in React on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Sep 2018 21:50:48 +0800</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/react/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/react/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>{react, redux} 🆚 {vue, vueX}</title>
-      <link>https://lisite.github.io/react/tempus/</link>
+      <link>/react/tempus/</link>
       <pubDate>Sat, 31 Mar 2018 22:26:13 -0500</pubDate>
       
-      <guid>https://lisite.github.io/react/tempus/</guid>
+      <guid>/react/tempus/</guid>
       <description>关于React：  React 最初的目的是使用 JavaScript 创建大型的，快速响应的网络应用。
  优点：
 1、它让你在编写代码的时候同时也在思考你的应用。

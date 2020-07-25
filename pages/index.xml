@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Forty</title>
-    <link>https://lisite.github.io/pages/</link>
+    <link>/pages/</link>
     <description>Recent content in Pages on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Sep 2018 21:51:00 +0800</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>小程序image标签模式</title>
-      <link>https://lisite.github.io/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</link>
+      <link>/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Sat, 17 Nov 2018 12:46:47 +0800</pubDate>
       
-      <guid>https://lisite.github.io/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>/pages/%E5%B0%8F%E7%A8%8B%E5%BA%8Fimage%E6%A0%87%E7%AD%BE%E6%A8%A1%E5%BC%8F/</guid>
       <description>image组件默认宽度300px、高度225px 注2：image组件中二维码/小程序码图片不支持长按识别。仅在wx.previewImage中支持长按识别。
 mode 有效值：
 mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
@@ -26,10 +26,10 @@ mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
     
     <item>
       <title>HTML5 API</title>
-      <link>https://lisite.github.io/pages/pages/</link>
+      <link>/pages/pages/</link>
       <pubDate>Mon, 16 Apr 2018 22:42:51 -0500</pubDate>
       
-      <guid>https://lisite.github.io/pages/pages/</guid>
+      <guid>/pages/pages/</guid>
       <description>html51、Camera API 通过Camera API,你可以使用手机的摄像头拍照,然后把拍到的照片发送给当前网页.这些操作主要是通过一个input元素来实现的,其中该元素的type属性必须为“file”,accept属性要允许图片格式,这样才能知道这个文件选择框是用来选择图片的,完整的HTML结构看起来是这样的:
  &amp;lt;input type=&amp;quot;file&amp;quot; id=&amp;quot;take-picture&amp;quot; accept=&amp;quot;image/*&amp;quot;&amp;gt; 建议在移动端测试一下
 2、&amp;lt;video&amp;gt;和&amp;lt;radio&amp;gt;语义话标签 视频和音频播放标签

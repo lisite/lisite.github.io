@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Svgs on Forty</title>
-    <link>https://lisite.github.io/svg/</link>
+    <link>/svg/</link>
     <description>Recent content in Svgs on Forty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Nov 2018 15:14:45 +0800</lastBuildDate>
     
-	<atom:link href="https://lisite.github.io/svg/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/svg/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Svg</title>
-      <link>https://lisite.github.io/svg/svg/</link>
+      <link>/svg/svg/</link>
       <pubDate>Thu, 22 Nov 2018 15:14:45 +0800</pubDate>
       
-      <guid>https://lisite.github.io/svg/svg/</guid>
+      <guid>/svg/svg/</guid>
       <description>这是一个用 img 标签引用的 svg 图片 点的试试？ 请问各位同学，哪个可以点击的了？ &amp;lt;img src=&amp;#34;/img/arrow.svg&amp;#34; /&amp;gt; ![svg 图片](/img/arrow.svg) &amp;lt;object type=&amp;#34;image/svg+xml&amp;#34; data=&amp;#34;/img/arrow.svg&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34; &amp;gt; &amp;lt;div role=&amp;#34;img&amp;#34; class=&amp;#34;shapes-fallback&amp;#34; aria-label=&amp;#34;shapes animation&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/object&amp;gt; firefox 和 safari 没有很友好的显示出点击时的过渡动画</description>
     </item>
     
     <item>
       <title>Animate</title>
-      <link>https://lisite.github.io/svg/animate/</link>
+      <link>/svg/animate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisite.github.io/svg/animate/</guid>
+      <guid>/svg/animate/</guid>
       <description>example:
 &amp;lt;svg width=&amp;#34;200&amp;#34; height=&amp;#34;200&amp;#34; x=&amp;#34;0&amp;#34; y=&amp;#34;0&amp;#34; viewBox=&amp;#34;0 0 200 200&amp;#34; &amp;gt; &amp;lt;g stroke=&amp;#34;#ffffff&amp;#34; fill=&amp;#34;none&amp;#34; stroke-width=&amp;#34;4&amp;#34;&amp;gt; &amp;lt;circle cx=&amp;#34;100&amp;#34; cy=&amp;#34;100&amp;#34; r=&amp;#34;10&amp;#34; stroke-opacity=&amp;#34;0&amp;#34;&amp;gt; &amp;lt;animate attributeName=&amp;#34;r&amp;#34; begin=&amp;#34;0s&amp;#34; dur=&amp;#34;1.8s&amp;#34; values=&amp;#34;1; 20&amp;#34; calcMode=&amp;#34;spline&amp;#34; keyTimes=&amp;#34;0; 1&amp;#34; keySplines=&amp;#34;0.165, 0.84, 0.44, 1&amp;#34; repeatCount=&amp;#34;indefinite&amp;#34;/&amp;gt; &amp;lt;animate attributeName=&amp;#34;stroke-opacity&amp;#34; begin=&amp;#34;0s&amp;#34; dur=&amp;#34;1.8s&amp;#34; values=&amp;#34;1; 0&amp;#34; calcMode=&amp;#34;spline&amp;#34; keyTimes=&amp;#34;0; 1&amp;#34; keySplines=&amp;#34;0.3, 0.61, 0.355, 1&amp;#34; repeatCount=&amp;#34;indefinite&amp;#34;/&amp;gt; &amp;lt;/circle&amp;gt; &amp;lt;circle cx=&amp;#34;100&amp;#34; cy=&amp;#34;100&amp;#34; r=&amp;#34;10&amp;#34; stroke-opacity=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;/circle&amp;gt; &amp;lt;/g&amp;gt; &amp;lt;/svg&amp;gt;   attributeName: I guess this is about which attribute you want to animate.</description>
     </item>
