@@ -1,0 +1,59 @@
+<!DOCTYPE HTML><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="description" content="Study hard, day day up!"><meta name="author" content="大西瓜"><meta name="generator" content="Hugo 0.66.0"><title>大西瓜🍉</title><link rel="stylesheet" href="/css/main.css"><link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"><link rel="icon"><!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]--></head><body><div id="wrapper"><header id="header" class="alt"><a href="/" class="logo"><strong>大西瓜</strong> <span>🍉 👶</span></a><nav><a href="#menu">菜单</a></nav></header><nav id="menu"><ul class="links"><li><a href="/">主页</a></li><li><a href="/stories">故事</a></li><li><a href="/javascripts">javascript</a></li><li><a href="/pages">页面展示总结</a></li><li><a href="/react">react</a></li><li><a href="/vue">vue</a></li><li><a href="/svg">svg</a></li><li><a href="/config">配置汇总</a></li></ul><ul class="actions vertical"><li><a href="/blogs" class="button special fit">开始吧</a></li><li><a href="/" class="button fit">Log In</a></li></ul></nav><div id="main" class="alt"><section id="one"><div class="inner"><header class="major"><h1></h1><span>Mon, 01 Jan 0001 00:00:00</span></header><hr><h2 id="draft-false">title: &ldquo;元编程了解一下&rdquo; description: &ldquo;proxy 和 reflect&rdquo; slug: &ldquo;magna&rdquo; image: pic09.jpg keywords: &quot;&rdquo; categories: - &quot;&rdquo; - &quot;&rdquo; date: 2020-09-23T15:59:09-05:00 draft: false</h2><blockquote><p>从ECMAScript 2015 开始，JavaScript 获得了 <code>Proxy</code> 和 <code>Reflect</code> 对象的支持，允许你拦截并定义基本语言操作的自定义行为（例如，属性查找，赋值，枚举，函数调用等）。借助这两个对象，你可以在 JavaScript 元级别进行编程。</p></blockquote><h3 id="代理proxy">代理(Proxy)</h3><p>在ECMAScript中引入的Proxy对象可以拦截某些操作并实现自定义的行为. 例如获取一个对象上的属性, 并对属性进行操纵.</p><h4 id="语法">语法</h4><blockquote><p>const p = new Proxy(target, handler)</p></blockquote><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// e.g 1
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">get</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">prop</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">msg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prop</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">target</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;$$$ &#39;</span><span style="color:#f92672">+</span> <span style="color:#a6e22e">prop</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; is being wrapped ! $$$&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;the prop is not in this object&#39;</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">msg</span>
+  }
+}
+
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">pxy</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Proxy({}, <span style="color:#a6e22e">handler</span>)
+
+<span style="color:#a6e22e">pxy</span>.<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+
+<span style="color:#a6e22e">pxy</span>.<span style="color:#a6e22e">a</span>
+<span style="color:#a6e22e">pxy</span>.<span style="color:#a6e22e">b</span>  <span style="color:#75715e">// the prop is not in this object
+</span><span style="color:#75715e"></span>
+</code></pre></div><h3 id="方法代理可以轻松地通过一个新构造函数来扩展一个已有的构造函数这个例子使用了construct和apply">方法代理可以轻松地通过一个新构造函数来扩展一个已有的构造函数。这个例子使用了construct和apply。</h3><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// e.g 2 通过方法代理实现对象的扩展
+</span><span style="color:#75715e"></span>
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">extend</span>(<span style="color:#a6e22e">sup</span>, <span style="color:#a6e22e">base</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">descriptor</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">getOwnPropertyDescriptor</span>(
+    <span style="color:#a6e22e">base</span>.<span style="color:#a6e22e">prototype</span>, <span style="color:#e6db74">&#34;constructor&#34;</span>
+  );
+  <span style="color:#a6e22e">base</span>.<span style="color:#a6e22e">prototype</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">sup</span>.<span style="color:#a6e22e">prototype</span>);
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">construct</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">args</span>) {
+      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">base</span>.<span style="color:#a6e22e">prototype</span>);
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">obj</span>, <span style="color:#a6e22e">args</span>);
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">obj</span>;
+    },
+    <span style="color:#a6e22e">apply</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">that</span>, <span style="color:#a6e22e">args</span>) {
+      <span style="color:#a6e22e">sup</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#a6e22e">that</span>, <span style="color:#a6e22e">args</span>);
+      <span style="color:#a6e22e">base</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#a6e22e">that</span>, <span style="color:#a6e22e">args</span>);
+    }
+  };
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">proxy</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Proxy(<span style="color:#a6e22e">base</span>, <span style="color:#a6e22e">handler</span>);
+  <span style="color:#a6e22e">descriptor</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">proxy</span>;
+  Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">base</span>.<span style="color:#a6e22e">prototype</span>, <span style="color:#e6db74">&#34;constructor&#34;</span>, <span style="color:#a6e22e">descriptor</span>);
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">proxy</span>;
+}
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Person</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">name</span>) {
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>
+};
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Boy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">extend</span>(<span style="color:#a6e22e">Person</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">age</span>;
+});
+
+<span style="color:#a6e22e">Boy</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">sex</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;M&#34;</span>;
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">Peter</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Boy</span>(<span style="color:#e6db74">&#34;Peter&#34;</span>, <span style="color:#ae81ff">13</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Peter</span>.<span style="color:#a6e22e">sex</span>);  <span style="color:#75715e">// &#34;M&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Peter</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">// &#34;Peter&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Peter</span>.<span style="color:#a6e22e">age</span>);  <span style="color:#75715e">// 13
+</span><span style="color:#75715e"></span>
+</code></pre></div><p>&hellip;此篇待续</p></div></section></div><footer id="footer"><div class="inner"><ul class="icons"><li><a href="https://www.twitter.com" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li><li><a href="https://www.facebook.com" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li><li><a href="https://www.instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li><li><a href="https://www.github.com" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li><li><a href="https://www.linkedin.com" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li></ul><ul class="copyright"><li>&copy; Company Name</li><li>Design: <a href="https://www.html5up.net">HTML5 UP</a></li></ul></div></footer></div><script src="/js/jquery.min.js"></script><script src="/js/jquery.scrolly.min.js"></script><script src="/js/jquery.scrollex.min.js"></script><script src="/js/skel.min.js"></script><script src="/js/util.js"></script><script src="/js/vanilla-tilt.min.js"></script><script src="/js/main.js"></script></body></html>
